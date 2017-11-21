@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+		<meta name="author" content="sleek-geek.net" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<title>Relevance</title>
+		<link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+
+		<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+        <script type="text/javascript">google.load("feeds","1"); </script>
+		<link type="text/css" rel="stylesheet" href="css/about.css"/>
+
+		 
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.widescreen.css" media="all and (min-width: 900px)" />
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.themes.css" media="all and (min-width: 900px)" />
+
+<link  type="text/css" rel="stylesheet" href="css/base-style.css"/>
+
+		 <link media="screen and (device-aspect-ratio: 40/71)" type="text/css" rel="stylesheet" href="css/iphone5.css"/>
+    <link media="screen and (device-aspect-ratio: 2/3)" type="text/css" rel="stylesheet" href="css/iphone3-4.css"/>
+    <link media="screen and (device-aspect-ratio: 9/16)" type="text/css" rel="stylesheet" href="css/galaxyS4.css"/>
+       
+		<style type="text/css">
+			@media all and (min-width: 900px) {
+				html, body {
+					height: 100%;
+				}
+				#menu {
+					background: #eee;
+				}
+				#page {
+
+					border-left: 1px solid #ccc;
+					min-height: 100%;
+				}
+				/* hide open-button */
+				a[href="#menu"]
+				{
+					display: none !important;
+				}
+			}
+
+
+		</style>
+
+		 
+    <script src="js/jquery-1.7.1.min.js"></script>
+   
+     
+		 
+		<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					classes: 'mm-light'
+				});
+			});
+		</script>
+
+	</head>
+	<body>
+		<div data-role="page">
+		<div id="static">
+		 <div id="header">
+		   
+				<a  style="color:# 7D7366; text-decoration:none;" href="#menu"><img id="list-btn-img" src="img/nav-bar-list.png"/></a>
+			 	
+			 
+					<a href="index.html" class="home-btn"><img id="home-btn-img" src="img/nav-bar-home.png"/></a>
+			 	
+				<span id="header-relevance-title" class="header-title">Relevance</span>
+			
+			</div>
+ 		</div>
+			<div id="content">
+
+			 
+			  
+		 
+			<!-- <div id="latest-news"></div> -->
+
+			 <ul id="latest-news-relevance"><span style="font-size:20px">Loading...</span></ul>
+
+
+			 
+			</div><!--content-->
+
+
+
+
+			<nav id="menu">
+				<ul style="font-family:'Muli'; margin-top:70px">
+				<li><a href="index.html">Home</a></li>
+					<li style="padding-left:5%;padding-top:8px;background-color:#E6E6E6;height:5%; padding-bottom:5px"> AIA National</li>
+					
+					<li style="background-color:#FFFFFF; margin-left:10%"><a href="nat-architect.html">AIArchitect</a></li>
+					<li style="padding-left:5%;padding-top:8px; background-color:#E6E6E6;height:5%; padding-bottom:5px"> AIA California Council</li>
+					<li style="background-color:#FFFFFF; margin-left:10%"><a href="cal-relevance.html">Relevance</a></li>
+					<li style="padding-left:5%;padding-top:8px; background-color:#E6E6E6;height:5%; padding-bottom:5px"> AIA East Bay</li>
+					<li style="background-color:#FFFFFF; margin-left:10%"><a href="archnews.html">ArchNews</a></li>
+					<li style="background-color:#FFFFFF; margin-left:10%"><a href="aiaeb-calendar.html">Calendar</a></li>
+					<li style="background-color:#FFFFFF; margin-left:10%"><a href="aiaeb-news.html">News</a></li>
+				</ul>
+			</nav>
+
+
+
+
+
+
+		</div><!--data role page-->
+
+		 
+
+	</body>
+
+	<script>
+
+
+ var a=navigator.onLine;
+ if(a){
+  console.log('we are online...');
+ }else{
+   displayNetworkError();
+   console.log('we are NOT online...');
+ }
+
+       function displayNetworkError(){
+
+
+  document.getElementById("content").innerHTML="<p style='margin-top:20%'>You are not connected to the internet. Please Check your connection and try again...</p><br><br><input type='button' value='try again' onclick='window.location.reload();'></input>";
+ }
+ 
+
+
+
+
+
+	$(document).ready(function(){
+		console.log('functioning');
+
+
+
+
+
+ 
+function feedLoaded(result) {
+  if (!result.error) {
+
+  	 
+  	var items = result.xmlDocument.getElementsByTagName('item');
+  	 var rssoutput = "";
+  	 var title="";
+  	 var author="";
+  	 var date="";
+  	 var desc="";
+  	 var content="";
+  	 var tempDiv='';
+  	 var myImage="";
+  	 var imgURL="";
+  	 var tempImgUrl="";
+  	 var articleLink="";
+
+  	 var indexOfArticle=0;
+  	 var arrOfImages=[];
+  	 var relevanceDataNum=0;
+  	 var dataToStore=[];
+  	  
+
+
+  	 
+   
+
+  
+   for (var i = 0; i < items.length; i++) {
+      var item = items[i];
+
+ console.log(item);
+
+   title = item.getElementsByTagName('title')[0].firstChild.nodeValue;
+   author = item.getElementsByTagName('author')[0].firstChild.nodeValue;
+   desc = item.getElementsByTagName('description')[0].firstChild.nodeValue;
+   date= item.getElementsByTagName('pubDate')[0].firstChild.nodeValue;
+   content= item.getElementsByTagName('encoded')[0].firstChild.nodeValue;
+   articleLink=item.getElementsByTagName('link')[0].firstChild.nodeValue;
+
+   console.log("The link is : " + articleLink);
+
+
+//creating the item to hold this item's data that will pass to relevance-swiper
+    var itemToPass={'title': title,
+					'author':author,
+					'description': desc,
+					'date':date,
+					'content': content,
+				'link':articleLink};
+   
+   
+
+    
+   tempDiv = document.createElement("div");
+   tempDiv.innerHTML=content;
+   
+   var cleanDesc=$(desc).text();
+
+   console.log("CONTENT OF DESC"+ " " +cleanDesc);
+
+    myImage = tempDiv.getElementsByTagName("img");
+
+    if(myImage[0]){
+     imgURL= myImage[0].src;
+     console.log('Post contains at least one image');
+
+     
+    
+     
+    } else {
+
+         imgURL= "img/grey-screen-logo.png";
+    	console.log('Post contains no images');
+
+
+
+    }
+
+    for (var j=0; j<myImage.length; j++){
+
+
+       tempImgUrl=myImage[j].src;
+
+    	
+
+    	arrOfImages.push(tempImgUrl);
+    	
+
+
+    }
+
+
+  //var imgs = content.getElementsByTagName('img');
+  // for help see: http://www.nimblekit.com/forum/viewtopic.php?f=6&t=1422
+   
+  var entrydate=new Date(date);
+
+  var entrydatestr=' '+(entrydate.getMonth()+1)+"/"+entrydate.getDate()+"/"+entrydate.getFullYear();
+  var byline=author+' '+entrydatestr;
+  
+
+   var itemToPass={ 'index': indexOfArticle,
+   	  				'title': title,
+					'author':author,
+					'description': cleanDesc,
+					'date':date,
+					'content': content,
+					'image_sources':arrOfImages,
+					'link':articleLink
+					 
+					};
+
+
+					console.log("here is the item");
+					console.log(itemToPass);
+
+	
+
+	  dataToStore.push(itemToPass);
+
+	 
+
+
+
+
+	  
+					 
+  //desc.parentNode.removeChild
+
+    
+   
+
+  rssoutput += ' <a href="relevance-dynamic-swiper.html'+'?index='+indexOfArticle+'"><li class="listItem"><div class="snippet-left-relevance"><img class="story-img" src="'+imgURL+'"></div><div class="snippet-right-relevance"><p class="snippet-title-relevance">'+title + '</p><span class="description-wrapper"  >'+ cleanDesc+'</span><p class="byline">by '+byline+'</p></div></li></a>';
+
+
+  indexOfArticle++;
+  relevanceDataNum++;
+
+  arrOfImages=[];
+
+  }
+
+if (localStorage){
+	console.log("clearing local storage");
+
+	localStorage.clear();
+}
+	var theJSONdata =JSON.stringify(dataToStore);
+
+  localStorage.setItem('relevanceData', theJSONdata);
+  console.log("DAta to store: " + dataToStore);
+
+  document.getElementById("latest-news-relevance").innerHTML = rssoutput;
+  $("p").filter(":contains('The post')").remove();
+
+  }
+
+}
+
+
+
+function OnLoad() {
+  // Create a feed instance that will grab Digg's feed.
+
+// var feed = new google.feeds.Feed("http://aiacc.org/feed/rss2/");
+
+//var feed = new google.feeds.Feed("http://aiaeb.org/calendar/blog/feed/");
+    
+  var feed = new google.feeds.Feed("http://www.aiacc.org/category/relevance/feed/");
+
+  // Request the results in XML
+  feed.setResultFormat(google.feeds.Feed.XML_FORMAT);
+    feed.setNumEntries(17 );
+  // Calling load sends the request off.  It requires a callback function.
+  feed.load(feedLoaded);
+
+}
+
+google.setOnLoadCallback(OnLoad);
+
+
+
+ 
+
+	});
+
+	</script>
+
+
+
+</html>

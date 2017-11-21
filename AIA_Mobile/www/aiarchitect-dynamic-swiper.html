@@ -1,0 +1,857 @@
+
+<!DOCTYPE html> 
+<html>
+<!--NOTES  
+
+-1/3 width for picture 
+-1-2 line title
+-no more than three lines of text
+- author line, same font 8px
+
+
+
+
+
+
+-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>AIArchitect</title> 
+   <link href='http://fonts.googleapis.com/css?family=Muli:300,300italic' rel='stylesheet' type='text/css'>
+    
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">google.load("feeds","1"); </script>
+
+
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="http://dimsemenov-static.s3.amazonaws.com/dist/magnific-popup.css"/>
+
+
+
+    <link type="text/css" rel="stylesheet" href="css/about.css"/>
+     
+     <script src="js/jquery.mobile.custom.js"></script>
+     <script src="http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js"></script>
+
+     <script defer src="js/idangerous.swiper.js"></script>
+      <script type="text/javascript" src="js/purl.js"></script>
+
+<style>
+
+body{
+
+
+  background-color: white;
+}
+.content{
+
+  height:100%;
+}
+
+#header{
+         
+        border-style: solid;
+        background-color:white;
+        border-top-color:white;
+        border-right-color:white;
+         border-left-color:white;
+        border-bottom-color: gray;
+        border-bottom-width: 1px;
+        margin-bottom: 100px;
+        margin-top:0px;
+        height:70px;
+
+
+      }
+      #header-title{
+
+        font-family:'Muli';
+        position:absolute;
+        margin-left:-45px;
+        margin-top:20px;
+
+
+        color:#ed2e38;
+        background-color:white;
+      }
+
+       #navCloseButton{
+
+        width:40px;
+        height:40px;
+        margin-top:-10px;
+      }
+      .home-btn{
+
+         
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 10px;
+        text-align:right;
+        margin-left:80%;
+
+
+
+
+      }
+      
+      #home-btn-img{
+
+        width: 35px;
+        height:35px;
+        position:absolute;
+        margin-left:-30px;
+        margin-top:25px;
+
+
+      }
+      .share-btn{
+
+        position:absolute;
+    margin-left:195px;
+    margin-right:8px;
+    margin-top:10px;
+    width:30px;
+    height: 35px;
+    margin-top:25px;
+
+
+
+      }
+
+      #static{
+
+        width:100%;
+
+         position:fixed;
+         z-index: 2;
+         
+
+
+      }
+
+
+.carousel {
+  height: 190px;
+  margin-bottom: 0px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 190px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: relative;
+  vertical-align:text-top;
+  background-position: center center;
+   background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  /*min-width: 100%;*/
+  height: 190px;
+}
+
+
+ 
+ 
+#nav{
+
+
+}
+p, h1,h2,h3{
+
+    font-family:'Muli';
+    margin-left:10px;
+    margin-right:10px;
+}
+
+ 
+
+/*
+.article-title{
+
+font-family:'Muli';
+    overflow: hidden;
+ text-overflow:ellipsis;
+ font-size:30px;
+ display: -webkit-box;
+ line-height: 30px;
+ max-height: 68px;
+ -webkit-line-clamp:2;
+ -webkit-box-orient:vertical;
+ margin-left:10px;
+ margin-top:0px;
+  
+}
+
+*/
+
+.article-title{
+
+
+   font-family:'Muli';
+   float:left; margin-top:100px;
+    font-size:30px;  overflow: hidden; 
+    text-overflow:ellipsis; 
+    display: -webkit-box; 
+
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    line-height: 40px;
+     max-height: 80px;
+     margin-left:10px;
+     margin-right:5px;
+     margin-top:80px;
+}
+.author-byline{
+font-size: 10pt;
+font-family: 'Muli';
+margin-left:10px;
+
+
+}
+.article-text{
+
+    font-size:45px;
+     
+    line-height: 120%;
+     
+    
+    margin-top:0px;
+}
+
+.articleText{
+
+  font-size:30px;
+  line-height: 120%;
+   
+  margin-top:10px;
+
+}
+.wp-caption-text{
+
+  color:blue;
+  font-size:10px;
+}
+.title-wrapper{
+  display:block;
+   
+  height:125px;
+  background-color: white;
+   
+
+}
+.content{
+
+  padding:0px; margin-top:80px;
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 25px;
+  width:auto;
+  max-width: 600px;
+  margin: 0 auto; 
+}
+
+.mfp-newspaper {
+  
+  /* start state */
+  .mfp-with-anim {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out; 
+    transition: all 0.5s;
+    
+    transform: scale(0) rotate(500deg);
+  }
+  
+  &.mfp-bg {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  /* animate in */
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+  
+  /* animate out */
+  &.mfp-removing {
+    
+    .mfp-with-anim {
+      transform: scale(0) rotate(500deg);
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+    
+  }
+  
+}
+
+ul.social-media{
+
+list-style-type:none;
+background-color: white;
+margin-left:-20px;
+margin-right:-20px;
+margin-bottom:-38px;
+
+
+}
+#test-popup{
+
+
+background-color: #D0D2D3;
+
+}
+#cancel-social{
+  position: relative;
+  color:#ed2e38;
+  font-size:20px;
+  margin-left:0px;
+  margin-bottom: 15px;
+  margin-top:-8px;
+}
+
+.social-label{
+
+  color:#201D15;
+   display:block;
+   margin-top:20px;
+    
+  text-align: center;
+  padding-top:20px;
+  margin-bottom:-63px;
+   
+}
+.social-image{
+  margin-top:30px;
+ display:block;
+ text-align: center;
+ margin-left:38px;
+ margin-bottom:20px;
+  
+ 
+
+}
+
+ 
+ 
+</style>
+
+
+</head> 
+
+<body> 
+
+
+
+<div data-role="page" id="viewnews">
+
+
+<div id="static">
+    <div id="header">
+       <span >  </span>
+         <a  style="color:#7D7366; text-decoration:none; margin-top:28px; " href="nat-architect.html"><img id="navCloseButton" src="img/nav-bar-close.png"/></a>
+         <span id="header-title">AIArchitect</span>
+         <div id="inline-popups"> <a  href="#test-popup" data-effect="mfp-newspaper"><span id="share"><img class="share-btn" src="img/nav-bar-share.png"/></span></a></div>
+          <a   href="index.html" class="home-btn"><img id="home-btn-img" src="img/nav-bar-home.png"/></a>
+      </div><!--header-->
+</div> 
+      
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper" style="height:100%">
+
+
+
+      
+      
+
+    </div><!--/////End of the swiper slide wrapper....all swipers must be above this line-->
+
+  </div><!--//////End of the swiper container -->
+  <a href="#thetop">[Go Back to the top]</a>
+</div><!--page, viewnews this has to be the end of the whole document-->
+
+
+
+
+<div id="test-popup" class="white-popup mfp-with-anim mfp-hide">
+ 
+<ul class="social-media">
+ <li><p class="social-label">Email</p><img class="social-image" src="img/email-icon.png" width="50"> </li>
+ <hr>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http://developer.linkedin.com&title=LinkedIn%20Developer%20Network&summary=My%20favorite%20developer%20program&source=LinkedIn"><p class="social-label">LinkedIn</p><img class="social-image" src="img/linkedin-icon.png" width="50"></a> </li>
+  <hr>
+  <li><p class="social-label">Facebook</p><img class="social-image" src="img/facebook-icon.png" width="50"> </li>
+  <hr>
+  
+  <li><p class="social-label">Twitter</p><img class="social-image" src="img/twitter-icon.png" width="50"> </li>
+  
+  </ul>
+
+</div>
+
+
+
+
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <script src="js/bootstrap.js">
+
+        </script>
+
+        <script>  
+$(document).ready(function() {  
+
+//get and parse url
+//parsing with: https://github.com/allmarkedup/purl
+  var theUrl=$.url();
+  var theIndex=theUrl.param("index")
+   console.log("The Index clicked: "+ theIndex);
+  var activeIndex=parseInt(theIndex);
+
+
+     var title="";
+     var author="";
+     var date="";
+     var desc="";
+     var content="";
+     var tempDiv='';
+     var myImage="";
+     var imgURL="";
+     var contentNoImages="";
+     var images=[]; //the images for a specific index's carousel images. 
+     var loadedSlides=[]; //this will hold the indexes already displayed so we don't load them again.
+
+
+var imagehtmlString="";
+var indicators="";
+var slideData="";
+var activeItem="";
+var errorURL="http://rack.3.mshcdn.com/media/ZgkyMDEyLzEyLzA0L2VlLzM1ZW50ZXJ0YWluLmIyOS5qcGcKcAl0aHVtYgk5NTB4NTM0IwplCWpwZw/da6607ac/8e3/35-entertaining-404-error-pages-b35e85a988.jpg";
+
+
+
+var localData=JSON.parse(localStorage.getItem('aiarchitectData'));
+ 
+
+//var difference=localData.length - theIndex;
+ //console.log("The difference is: " +difference);
+
+
+ 
+
+
+
+ var loadNextslides=function(dat,thisIndex){
+
+  var nextIndex=(parseInt(thisIndex)+1);
+  console.log(thisIndex);
+   console.log(nextIndex);
+
+  images=[];
+  indicators="";
+  slideData="";
+
+
+
+  console.log("__________________Bulding NEXT Slide, sir____________________");
+   
+ //lets see if this is the last Index, if so, then build index 0, 
+  if (thisIndex==(localData.length -1)){
+
+   console.log("This is the last index item, so lets build slide 0 instead")
+
+          title=localData[0].title;
+          author=localData[0].author;
+          desc=localData[0].description;
+          content=localData[0].content;
+
+           console.log(title);
+           console.log(author);
+
+ 
+        images=localData[0].image_sources;
+ 
+        console.log(images);
+        contentNoImages = content.replace(/<img[^>]*>/g,"");
+        loadedSlides.push(0);
+
+
+   } else {
+  
+    console.log("This Index is not the last one" + " So we can build number "  +nextIndex + " now");
+
+
+      title=localData[nextIndex].title;
+      author=localData[nextIndex].author;
+      desc=localData[nextIndex].description;
+      content=localData[nextIndex].content;
+
+      console.log(title);
+      console.log(author);
+
+ 
+        images=localData[nextIndex].image_sources;
+ 
+        console.log(images);
+        contentNoImages = content.replace(/<img[^>]*>/g,"");
+       //for some reason, when the index is 1, it adds an image from the previous slide content
+      loadedSlides.push(nextIndex);
+
+      }  
+
+        if(images.length>0){
+
+               console.log("With"+" " +images.length+" images");
+
+
+              activeItem='<div class="item active"><img   id="image'+s+'" src="'+images[0]+'"  alt="First slide"></div>'
+
+              for(var s=0; s<images.length; s++){
+
+             indicators+='<li data-target="#carousel-'+nextIndex+'" data-slide-to="'+s+'" ></li>';
+             console.log("Adding indicator # " +s)
+
+               }
+
+              for(var s=1; s<images.length; s++){
+
+                if(images.length==1){
+                console.log('bulding first carousel image');
+                 
+                slideData=activeItem;
+
+                }else if (images.length>1){
+              
+                  slideData+='<div class="item"><img  src="'+images[s]+'" /></div>';
+                  console.log("building a slide for image:" +images[s]);
+
+
+
+                  }
+
+     
+              }
+
+            } else{
+
+                 console.log("We dont have image so lets return a dummy slideData");
+            }
+      
+
+      var slideContent='<h2 class="article-title" >'+title+'</h2> <p>  <span class="author-byline">'+author+'</span><div id="carousel-'+theIndex+'" class="carousel slide" data-ride="carousel"><ol class="carousel-indicators">'+indicators+'</ol><div class="carousel-inner">'+activeItem+slideData+'</div>   </div>  <div class="articleText" >'+contentNoImages+'<a href="#thetop">[Go Back to the top]</a></div>';
+
+
+      appendSlide(slideContent);
+      
+
+ 
+
+
+//let's determine what the next index should be...
+   
+
+
+};
+
+var loadPreviouslides=function(dat,thisIndex){
+
+  var previIndex=(parseInt(thisIndex)-1);
+  console.log(previIndex);
+   console.log(previIndex);
+   images=[];
+  indicators="";
+  slideData="";
+
+
+console.log("___________________building PREVIOUS Slide, sir______________________");
+//let's determine what the previous index should be....
+
+if (thisIndex==0){
+
+  console.log("This is the first index item, so lets build slide  the last slide instead, which is : " +(localData.length-1));
+
+    previIndex=localData.length-1;
+
+   loadedSlides.push(previIndex);
+
+     title=localData[previIndex].title;
+      author=localData[previIndex].author;
+      desc=localData[previIndex].description;
+      content=localData[previIndex].content;
+
+      console.log(title);
+      console.log(author);
+ 
+      images=localData[previIndex].image_sources;
+ 
+      console.log(images);
+      contentNoImages = content.replace(/<img[^>]*>/g,"");
+
+ } else {
+  
+   console.log("This Index is not the First one" + " So we can build number "  + (thisIndex-1) + " now");
+
+    loadedSlides.push(previIndex)
+
+      title=localData[previIndex].title;
+      author=localData[previIndex].author;
+      desc=localData[previIndex].description;
+      content=localData[previIndex].content;
+
+      console.log(title);
+      console.log(author);
+ 
+      images=localData[previIndex].image_sources;
+ 
+      console.log(images);
+      contentNoImages = content.replace(/<img[^>]*>/g,"");
+
+
+      } 
+
+      if(images.length>0){
+            console.log("With"+" " +images.length+" images");
+
+              activeItem='<div class="item active"><img  id="image'+s+'" src="'+images[0]+'" alt="First slide"></div>'
+
+          for(var s=0; s<images.length; s++){
+
+             indicators+='<li data-target="#carousel-'+previIndex+'" data-slide-to="'+s+'" ></li>';
+
+             }
+
+          for(var s=1; s<images.length; s++){
+
+             if(images.length==1){
+                console.log('bulding first carousel image');
+                 
+                slideData=activeItem;
+
+             }else if (images.length>1){
+              
+               slideData+='<div class="item"><img  src="'+images[s]+'"></div>';
+               console.log("building a slide for image:" +images[s]);
+
+              }
+     
+          }
+
+  } else{
+
+        console.log("We dont have image so lets return a dummy slideData");
+        activeItem='<div class="item active"><img  id="image'+0+'" src="http://bento.cdn.pbs.org/hostedbento-prod/filer_public/_bento_media/img/no-image-available.jpg" alt="First slide"></div>';
+         
+      }
+
+
+       var slideContent='<h2 class="article-title" >'+title+'</h2> <p>  <span class="author-byline">'+author+'</span><div id="carousel-'+theIndex+'" class="carousel slide" data-ride="carousel"><ol class="carousel-indicators">'+indicators+'</ol><div class="carousel-inner">'+activeItem+slideData+'</div>   </div>  <div  class="articleText">'+contentNoImages+'<a href="#thetop">[Go Back to the top]</a></div>';
+
+
+       appendSlide(slideContent);
+       
+
+
+
+
+}
+
+ var mySwiper = new Swiper('.swiper-container',{
+    //Your options here:
+    mode:'horizontal',
+
+    loop: true,
+    updateOnImagesReady:true,
+     onSlideChangeEnd: function() {
+      //Do something when you touch the slide
+      console.log("touched the slide: " + mySwiper.activeLoopIndex);
+       
+
+
+
+
+
+    },
+    onSlideNext: function(){
+      console.log("next slide: " + activeIndex);
+      activeIndex=activeIndex+1;
+      loadNextslides(localData,  activeIndex);
+
+    },
+    onSlidePrev: function(){
+      console.log("touched the slide: " + mySwiper.activeLoopIndex);
+      activeIndex=activeIndex-1;
+      //console.log("New active index should be: " + activeIndex);
+     // loadPreviouslides(localData, activeIndex);
+
+
+    },
+    onSwiperCreated:function(){
+
+
+      console.log("The swiper is created, sir");
+      
+      
+    }
+  }); 
+
+
+var prependSlide= function(cnt){
+
+   
+   var newSlide =mySwiper.createSlide(cnt);
+   
+      //newSlide.prepend(activeIndex);
+      console.log("Prenending Slide!!!!!");
+
+
+  }
+
+   var appendSlide= function(cnt){
+
+   
+  var newSlide =mySwiper.createSlide(cnt);
+  mySwiper.appendSlide(newSlide);
+      //newSlide.appendSlide(activeIndex);
+      console.log("Appending Slide!!!!!");
+
+
+  }
+
+
+var buildSlide=function(imgs,slideNum){
+
+
+  console.log("building Slide 1");
+    if(imgs.length>0){
+      console.log("With"+" " +imgs.length+" images");
+
+          activeItem='<div class="item active"><img  id="image'+0+'" src="'+images[0]+'" alt="First slide"></div>';
+          console.log("building a slide for image:" +imgs[0]);
+
+          for(var s=0; s<imgs.length; s++){
+
+             indicators+='<li data-target="#carousel-'+slideNum+'" data-slide-to="'+s+'" ></li>';
+
+             }
+
+          for(var s=1; s<imgs.length; s++){
+
+             if(imgs.length==1){
+                console.log('bulding first carousel image');
+                 
+                slideData=activeItem;
+
+             }else if (imgs.length>1){
+              
+               slideData+='<div class="item"><img  src="'+imgs[s]+'"></div>';
+               console.log("building a slide for image:" +imgs[s]);
+
+              }
+     
+          }
+
+    } else{
+
+        console.log("We dont have image so lets return a dummy slideData");
+        activeItem='<div class="item active"><img  id="image'+0+'" src="http://bento.cdn.pbs.org/hostedbento-prod/filer_public/_bento_media/img/no-image-available.jpg" alt="First slide"></div>';
+      }
+      /*
+
+      var newSlide =mySwiper.createSlide(
+
+ '<h2 class="article-title" >'+title+'</h2> <p>  <span class="author-byline">'+author+'</span><div id="carousel-'+theIndex+'" class="carousel slide" data-ride="carousel"><ol class="carousel-indicators">'+indicators+'</ol><div class="carousel-inner">'+activeItem+slideData+'</div>   </div>  <div style="font-size:30px; line-height: 120%;">'+contentNoImages+'</div>'
+
+      );
+      newSlide.prepend();
+
+      */
+
+      var slideContent='<a id="thetop"><h2 class="article-title" >'+title+'</h2></a> <p>  <span class="author-byline">'+author+'</span><div id="carousel-'+theIndex+'" class="carousel slide" data-ride="carousel"><ol class="carousel-indicators">'+indicators+'</ol><div class="carousel-inner">'+activeItem+slideData+'</div>   </div>  <div class="articleText">'+contentNoImages+'<a href="#thetop">[Go Back to the top]</a></div>';
+
+
+      appendSlide(slideContent);
+      loadedSlides.push(slideNum);
+ }//end function build slide
+
+
+
+ var initFirstSlides=function(indx){
+   title=localData[indx].title;
+author=localData[indx].author;
+desc=localData[indx].description;
+content=localData[indx].content;
+ 
+images=localData[indx].image_sources;
+ 
+contentNoImages = content.replace(/<img[^>]*>/g,"");
+
+buildSlide(images, indx);
+//loadPreviouslides(localData, theIndex);
+//loadNextslides(localData,theIndex);
+
+
+
+ }
+
+  initFirstSlides(theIndex);
+
+  console.log("Loaded slides so far at init: " + loadedSlides);
+  console.log("ActiveLoopIndex: " +mySwiper.activeLoopIndex);
+
+ 
+
+ 
+
+
+//Magnificent popup
+
+$('#inline-popups').magnificPopup({
+  delegate: 'a',
+  removalDelay: 500, //delay removal by X to allow out-animation
+  callbacks: {
+    beforeOpen: function() {
+       this.st.mainClass = this.st.el.attr('data-effect');
+    }
+  },
+  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+});
+
+   
+
+   
+
+});  
+</script> 
+
+
+</body>
+</html>

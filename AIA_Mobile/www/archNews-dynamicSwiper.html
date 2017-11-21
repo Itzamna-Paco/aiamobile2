@@ -1,0 +1,770 @@
+
+<!DOCTYPE html> 
+<html>
+<!--NOTES  
+
+-1/3 width for picture 
+-1-2 line title
+-no more than three lines of text
+- author line, same font 8px
+
+
+
+
+
+
+-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>AIArchitect</title> 
+   <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    
+
+
+     <link  rel="stylesheet" href="css/idangerous.swiper.css">
+     <link media="screen and (device-aspect-ratio: 9/16)" rel="stylesheet" href="css/idangerous.swiper.galaxys3-4.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="http://dimsemenov-static.s3.amazonaws.com/dist/magnific-popup.css"/>
+
+
+
+    <link type="text/css" rel="stylesheet" href="css/about.css"/>
+     
+     <script src="js/jquery.mobile.custom.js"></script>
+     <script src="http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js"></script>
+
+     <script defer src="js/idangerous.swiper.js"></script>
+      <script type="text/javascript" src="js/purl.js"></script>
+
+      <link  type="text/css" rel="stylesheet" href="css/base-style.css"/>
+
+       <link media="screen and (device-aspect-ratio: 40/71)" type="text/css" rel="stylesheet" href="css/iphone5.css"/>
+    <link media="screen and (device-aspect-ratio: 2/3)" type="text/css" rel="stylesheet" href="css/iphone3-4.css"/>
+    <link media="screen and (device-aspect-ratio: 9/16)" type="text/css" rel="stylesheet" href="css/galaxyS4.css"/>
+    
+
+<style>
+
+body{
+
+
+  background-color: white;
+}
+
+ 
+       
+       
+ 
+.carousel {
+ height:auto;
+  margin-bottom: 0px;
+  margin-left: 2%;
+  margin-right: 2%;
+   
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 100%;
+  background-color: white;
+  width:100%;
+  text-align:center;
+}
+.carousel-inner > .item > img {
+  position: relative;
+  vertical-align:text-top;
+  background-position: center center;
+   background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+   width:auto; 
+  /*height: 100%;*/
+
+}
+
+.carousel-indicators {
+visibility: hidden;
+}
+
+ 
+ 
+ 
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 25px;
+  width:auto;
+  max-width: 600px;
+  margin: 0 auto; 
+
+}
+ 
+ 
+
+
+
+.mfp-newspaper {
+  
+  /* start state */
+  .mfp-with-anim {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out; 
+    transition: all 0.5s;
+    
+    transform: scale(0) rotate(500deg);
+  }
+  
+  &.mfp-bg {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  /* animate in */
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+  
+  /* animate out */
+  &.mfp-removing {
+    
+    .mfp-with-anim {
+      transform: scale(0) rotate(500deg);
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+    
+  }
+  
+}
+
+ .articleText {
+font-size: 14pt;
+line-height: 140%;
+/* margin-top: 250px; */
+ 
+width: inherit;
+}
+ 
+ 
+ 
+ 
+ 
+</style>
+
+
+</head> 
+
+<body> 
+
+
+
+<div data-role="page" id="viewnews">
+
+
+<div id="static">
+    <div id="header">
+        
+         <a  style="color:#7D7366; text-decoration:none; margin-top:28px;" href="archnews.html"> <img id="navCloseButton" src="img/nav-bar-close.png"/></a>
+         <span id="header-archnews-dynamic-title" class="header-title">ArchNews</span>
+         <div id="inline-popups"> <a  href="#test-popup" data-effect="mfp-newspaper"><span id="share"><img class="share-btn" src="img/nav-bar-share.png"/></span></a></div>
+          <a   href="index.html" class="home-btn"><img id="home-btn-img" src="img/nav-bar-home.png"/></a>
+      </div><!--header-->
+</div> 
+
+ 
+
+
+      
+
+  <div  id="the-top"  class="swiper-container">
+    <div class="swiper-wrapper" style="height:100%">
+
+
+
+      
+      
+
+    </div><!--/////End of the swiper slide wrapper....all swipers must be above this line-->
+
+  </div><!--//////End of the swiper container -->
+  
+</div><!--page, viewnews this has to be the end of the whole document-->
+
+
+
+
+<div id="test-popup" class="white-popup mfp-with-anim mfp-hide">
+ 
+<ul class="social-media">
+ <a class="emailLink" href="mailto:"style="text-decoration:none" ><li class="social-media-share"><p class="social-label">Email</p><img class="social-image" src="img/email-icon.png" width="50"> </li></a>
+ <hr>
+  <a  style="text-decoration:none" class="linkedINShare" href="#"><li class="social-media-share"><p class="social-label">LinkedIn</p><img class="social-image" src="img/linkedin-icon.png" width="50"> </li></a>
+  <hr>
+  <a class="fbShare" style="text-decoration:none"  href="#"  onclick=""><li class="social-media-share"><p class="social-label">Facebook</p><img class="social-image" src="img/facebook-icon.png" width="50"> </li></a>
+  <hr>
+  
+  <a style="text-decoration:none" class="twitter popup" href="#" ><li class="social-media-share"><p class="social-label">Twitter</p><img class="social-image" src="img/twitter-icon.png" width="50"> </li></a>
+  
+  </ul>
+
+</div>
+
+
+
+
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <script src="js/bootstrap.js">
+
+        </script>
+
+        <script>  
+$(document).ready(function() {  
+
+//get and parse url
+//parsing with: https://github.com/allmarkedup/purl
+  var theUrl=$.url();
+  var theIndex=theUrl.param("index")
+   console.log("The Index clicked: "+ theIndex);
+  var activeIndex=parseInt(theIndex);
+
+
+     var title="";
+     var author="";
+     var date="";
+     var desc="";
+     var content="";
+     var tempDiv='';
+     var myImage="";
+     var imgURL="";
+     var contentNoImages="";
+     var images=[]; //the images for a specific index's carousel images. 
+     var loadedSlides=[]; //this will hold the indexes already displayed so we don't load them again.
+
+
+var imagehtmlString="";
+var indicators="";
+var slideData="";
+var activeItem="";
+var errorURL="http://rack.3.mshcdn.com/media/ZgkyMDEyLzEyLzA0L2VlLzM1ZW50ZXJ0YWluLmIyOS5qcGcKcAl0aHVtYgk5NTB4NTM0IwplCWpwZw/da6607ac/8e3/35-entertaining-404-error-pages-b35e85a988.jpg";
+
+var shareLink="";
+var shareLinkedIn="";
+var shareTwitter="";
+var shareFB="";
+
+
+
+var localData=JSON.parse(localStorage.getItem('archNewsData'));
+ 
+
+ console.log(localData);
+
+ 
+ 
+var countWords = function(cnt){
+
+
+
+cnt =cnt.replace(/(^\s*)|(\s*$)/gi,"");
+cnt =cnt.replace(/[ ]{2,}/gi," ");
+cnt =cnt.replace(/\n /, "\n");
+
+ var wrdcnt= cnt.split(' ').length;
+
+console.log("counting " +wrdcnt+ "  words...");
+return wrdcnt;
+};
+
+
+ var loadNextslides=function(dat,thisIndex){
+
+
+
+  var nextIndex=(parseInt(thisIndex)+1);
+  loadedSlides.push(thisIndex);
+  console.log(thisIndex);
+   console.log(nextIndex);
+
+  images=[];
+  indicators="";
+  slideData="";
+  shareLink="";
+
+
+
+  console.log("__________________Bulding NEXT Slide, sir____________________");
+  console.log("Now our loaded array contains this :" + loadedSlides); 
+   
+ //lets see if this is the last Index, if so, then build index 0, 
+  if (thisIndex==(localData.length)){
+
+   console.log("This is the last index item, so lets build slide 0 instead")
+
+          title=localData[0].title;
+          author=localData[0].author;
+          desc=localData[0].description;
+          content=localData[0].content;
+
+           console.log(title);
+           console.log(author);
+
+ 
+        images=localData[0].image_sources;
+ 
+        console.log(images);
+        contentNoImages = content.replace(/<img[^>]*>/g,"");
+        loadedSlides.push(0);
+
+
+   } else {
+  
+    console.log("This Index is not the last one" + " So we can build number "  +nextIndex + " now");
+
+
+      title=localData[nextIndex].title;
+      author=localData[nextIndex].author;
+      desc=localData[nextIndex].description;
+      content=localData[nextIndex].content;
+
+      console.log(title);
+      console.log(author);
+
+ 
+        images=localData[nextIndex].image_sources;
+ 
+        console.log(images);
+        contentNoImages = content.replace(/<img[^>]*>/g,"");
+       //for some reason, when the index is 1, it adds an image from the previous slide content
+      loadedSlides.push(nextIndex);
+
+      }  
+        if(images.length>0){
+
+               console.log("With"+" " +images.length+" images");
+
+
+              activeItem='<div class="item active"><img   id="image'+s+'" src="'+images[0]+'"  alt="First slide"></div>'
+
+              for(var s=0; s<images.length-1; s++){
+
+             indicators+='<li data-target="#carousel-'+nextIndex+'" data-slide-to="'+s+'" ></li>';
+             console.log("Adding indicator # " +s)
+
+               }
+
+              for(var s=1; s<images.length-1; s++){
+
+                if(images.length==1){
+                console.log('bulding first carousel image');
+                 
+                slideData=activeItem;
+
+                }else if (images.length>1){
+              
+                  slideData+='<div class="item"><img  src="'+images[s]+'" /></div>';
+                  console.log("building a slide for image:" +images[s]);
+
+
+
+                  }
+
+     
+              }
+
+            } else{
+
+                 console.log("We dont have image so lets return a dummy slideData");
+                   activeItem='<div class="item active"></div>'
+            }
+      
+
+      var slideContent='<h2 class="article-title" >'+title+'</h2> <p>  <span class="author-byline">'+author+'</span><div id="carousel-'+theIndex+'" class="carousel slide" data-ride="carousel"><ol class="carousel-indicators">'+indicators+'</ol><div class="carousel-inner">'+activeItem+slideData+'</div>   </div>  <div class="articleText" >'+contentNoImages+' <input class="goToTopButton" type="button" onclick="$(window).scrollTop(0);" value="[Go Back to Top]"   > </input></div>';
+
+
+      appendSlide(slideContent);
+      setSocial(shareLink,title,desc);
+      
+ $('.swiper-slide').css({'height':'auto'});
+//Height of new active slide:
+
+//need to calculate the height of the whole largest index
+//new function will return the largerst content getContentHeight()
+//It will take a variable of the biggest stored contentHeight, compare this slide to it and if bigger, replace it, if not, leave it alone
+//The getContentHeightMethod will count the words on the page, taking into account the font-size, screen-width, and any image heights. It will add them up together and give a close etimate of the height required, then set the new height below to what it returns....
+
+
+//getContentHeight()
+//First lets count how many words there are in the item by using the countWords() method
+
+
+var howManyWords= countWords(content);
+console.log("we got " + howManyWords + " from the function")
+
+var newHeight = howManyWords*7;
+//Set new Height to slides and slider:
+$('.swiper-container, .swiper-slide').css({ height : newHeight });
+
+console.log("The new height: " + newHeight);
+
+//And call reInit:
+mySwiper.reInit();
+ 
+
+
+//let's determine what the next index should be...
+   
+
+
+};
+
+ 
+
+ var mySwiper = new Swiper('.swiper-container',{
+    //Your options here:
+    mode:'horizontal',
+
+    loop: true,
+    updateOnImagesReady:true,
+     onSlideChangeEnd: function() {
+      //Do something when you touch the slide
+      console.log("touched the slide: " + mySwiper.activeLoopIndex);
+      $(window).scrollTop(0);
+       
+
+
+
+
+
+    },
+    onSlideNext: function(){
+      console.log("next slide: " + activeIndex);
+
+      if(activeIndex < localData.length){
+      activeIndex=activeIndex+1;
+      console.log("active index is: "+ activeIndex +" , and localData has "+localData.length+ " items");
+      } else{
+
+      console.log("Reached the end at active index : "+ activeIndex +" , so resetting activeIndex to 0");
+      activeIndex=0;
+
+
+      }
+
+
+
+      loadNextslides(localData,  activeIndex);
+
+
+    },
+    onSlidePrev: function(){
+      console.log("touched the slide: " + mySwiper.activeLoopIndex);
+      activeIndex=activeIndex-1;
+      //console.log("New active index should be: " + activeIndex);
+     // loadPreviouslides(localData, activeIndex);
+
+
+    },
+    onSwiperCreated:function(){
+
+
+      console.log("The swiper is created, sir");
+      
+      
+    }
+  }); 
+
+
+var prependSlide= function(cnt){
+
+   
+   var newSlide =mySwiper.createSlide(cnt);
+   
+      //newSlide.prepend(activeIndex);
+      console.log("Prenending Slide!!!!!");
+
+      //First of all unset slide's height:
+
+
+
+  }
+
+   var appendSlide= function(cnt){
+
+   
+  var newSlide =mySwiper.createSlide(cnt);
+  mySwiper.appendSlide(newSlide);
+      //newSlide.appendSlide(activeIndex);
+      console.log("Appending Slide!!!!!");
+
+     
+
+
+  }
+
+
+var buildSlide=function(imgs,slideNum){
+
+  loadedSlides.push(slideNum);
+
+
+
+  console.log("building Slide 1 and pushing slideNUM " + slideNum+ "to loadedSlides array");
+    if(imgs.length>0){
+      console.log("With"+" " +imgs.length+" images");
+
+          activeItem='<div class="item active"><img  id="image'+0+'" src="'+images[0]+'" alt="First slide"></div>';
+          console.log("building a slide for image:" +imgs[0]);
+
+          for(var s=0; s<imgs.length-1; s++){
+
+             indicators+='<li data-target="#carousel-'+slideNum+'" data-slide-to="'+s+'" ></li>';
+
+             }
+
+          for(var s=1; s<imgs.length-1; s++){
+
+             if(imgs.length==1){
+                console.log('bulding first carousel image');
+                 
+                slideData=activeItem;
+
+             }else if (imgs.length>1){
+              
+               slideData+='<div class="item"><img  src="'+imgs[s]+'"></div>';
+               console.log("building a slide for image:" +imgs[s]);
+
+              }
+     
+          }
+
+    } else{
+
+        console.log("We dont have image so lets return a dummy slideData");
+        activeItem='<div class="item active"></div>';
+      }
+      /*
+
+      var newSlide =mySwiper.createSlide(
+
+ '<h2 class="article-title" >'+title+'</h2> <p>  <span class="author-byline">'+author+'</span><div id="carousel-'+theIndex+'" class="carousel slide" data-ride="carousel"><ol class="carousel-indicators">'+indicators+'</ol><div class="carousel-inner">'+activeItem+slideData+'</div>   </div>  <div style="font-size:30px; line-height: 120%;">'+contentNoImages+'</div>'
+
+      );
+      newSlide.prepend();
+
+      */
+
+      var slideContent='<a id="thetop"><h2 class="article-title" >'+title+'</h2></a> <p>  <span class="author-byline">'+author+'</span><div id="carousel-'+theIndex+'" class="carousel slide" data-ride="carousel"><ol class="carousel-indicators">'+indicators+'</ol><div class="carousel-inner">'+activeItem+slideData+'</div>   </div>  <div class="articleText">'+contentNoImages+'<input class="goToTopButton" type="button" onclick="$(window).scrollTop(0);" value="[Go Back to Top]"   > </input></div>';
+
+
+      appendSlide(slideContent);
+      loadedSlides.push(slideNum);
+ }//end function build slide
+
+
+ var setSocial=function(lnk,tit,des){
+
+
+
+  var titleURI=escape(tit);
+
+  var cleanTitle=titleURI.replace("/","%2F");
+
+
+      
+
+
+console.log("title:" + " " + cleanTitle);
+//LINKEDiN
+   shareLinkedIn="http://www.linkedin.com/shareArticle?mini=true&url="+lnk+"&title="+titleURI+"&summary="+escape(des)+"&source=LinkedIn";
+
+       console.log("LINKED IN >>>> " + shareLinkedIn );
+        
+
+
+       //Twitter
+
+
+       var tweet=tit + " from" + " @aiaeastbay" + " " +cleanTitle;
+
+       shareTwitter="http://twitter.com/share?text=" + escape(tweet);
+        
+
+       //FB
+
+       shareFB="https://www.facebook.com/sharer/sharer.php?u=" +shareLink;
+       console.log("Share FB-" + shareFB);
+
+
+     //email:
+
+      
+     var shareEmail="mailto:?subject=Great%20Article%20from%20ArchNews&body="+title+" " + "\r\n"+ shareLink ;
+
+     $('.emailLink').attr('href', shareEmail);
+
+
+
+ };
+
+
+ var initFirstSlides=function(indx){
+   title=localData[indx].title;
+author=localData[indx].author;
+desc=localData[indx].description;
+content=localData[indx].content;
+shareLink=localData[indx].link;
+ 
+images=localData[indx].image_sources;
+ 
+contentNoImages = content.replace(/<img[^>]*>/g,"");
+
+//lets add the theIndex to the loaded array:
+buildSlide(images, indx);
+
+ //updateLinksForInAppBrowser();
+
+setSocial(shareLink,title,desc);
+
+
+//loadPreviouslides(localData, theIndex);
+//loadNextslides(localData,theIndex);
+
+
+
+ }
+
+  initFirstSlides(theIndex);
+
+  console.log("Loaded slides so far at init: " + loadedSlides);
+  console.log("ActiveLoopIndex: " +mySwiper.activeLoopIndex);
+
+
+   
+
+ 
+
+ 
+
+
+//Magnificent popup
+
+$('#inline-popups').magnificPopup({
+  delegate: 'a',
+  removalDelay: 500, //delay removal by X to allow out-animation
+  callbacks: {
+    beforeOpen: function() {
+       this.st.mainClass = this.st.el.attr('data-effect');
+    }
+  },
+  midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+});
+
+$('.emailLink').click(function(event){
+
+ 
+  
+
+});
+ 
+
+//https://www.webpop.com/blog/2011/02/16/add-a-custom-twitter-button-to-your-website
+
+$('.linkedINShare').click(function(event){
+
+ 
+ 
+
+
+ //$(this).prop("onclick", shareLinkedIn);
+ var ref = window.open(shareLinkedIn, '_blank', 'location=yes');
+
+});
+
+$('.fbShare').click(function(event){
+
+ 
+
+ var ref = window.open(shareFB, '_blank', 'location=yes');
+
+//$(this).prop("href", shareFB);
+
+});
+   
+$('.popup').click(function(event) {
+
+  var ref = window.open( shareTwitter, '_blank', 'location=yes');
+ /* $(this).prop("href", shareTwitter);
+    var width  = 200,
+        height = 400,
+        left   = ($(window).width()  - width)  / 2,
+        top    = ($(window).height() - height) / 2,
+        url    = this.href,
+        opts   = 'status=1' +
+                 ',width='  + width  +
+                 ',height=' + height +
+                 ',top='    + top    +
+                 ',left='   + left  ;
+
+                 */
+    
+   // window.open(url, 'twitter', opts);
+
+    
+ 
+    
+  });
+
+$('.swiper-wrapper').on('click', 'a[href]', function(){
+
+      var aLink=this.href;
+       event.preventDefault();
+       
+      var ref = window.open(aLink, '_blank', 'location=yes');
+      console.log("accessing : " + aLink);
+
+
+    });
+   
+$('.go-back-top').on('click', function(){
+ 
+alert('hello!')
+ $(window).scrollTop(0);
+
+});
+
+
+ 
+
+   
+
+});  
+</script> 
+
+
+</body>
+</html>

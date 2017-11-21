@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+		<meta name="author" content="sleek-geek.net" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<title>ARCHnews</title>
+		<link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+		<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+        <script type="text/javascript">google.load("feeds","1"); </script>
+		<link type="text/css" rel="stylesheet" href="css/about.css"/>
+
+		<link rel="stylesheet" href="css/idangerous.swiper.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+
+		 
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.widescreen.css" media="all and (min-width: 900px)" />
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.themes.css" media="all and (min-width: 900px)" />
+
+<link  type="text/css" rel="stylesheet" href="css/base-style.css"/>
+		 <link media="screen and (device-aspect-ratio: 40/71)" type="text/css" rel="stylesheet" href="css/iphone5.css"/>
+    <link media="screen and (device-aspect-ratio: 2/3)" type="text/css" rel="stylesheet" href="css/iphone3-4.css"/>
+    <link media="screen and (device-aspect-ratio: 9/16)" type="text/css" rel="stylesheet" href="css/galaxyS4.css"/>
+
+		<style type="text/css">
+			@media all and (min-width: 900px) {
+				html, body {
+					height: 100%;
+				}
+				#menu {
+					background: #eee;
+				}
+				#page {
+
+					border-left: 1px solid #ccc;
+					min-height: 100%;
+				}
+				/* hide open-button */
+				a[href="#menu"]
+				{
+					display: none !important;
+				}
+			}
+
+			 
+			.article1-link{
+
+
+				text-decoration: none;
+			}
+		 
+			
+
+			ul {
+    		list-style: none;
+    		padding: 0;
+    		margin: 0;
+   			 display: table;
+   			 width: 98%;
+   			 border-spacing:5px;
+   			 margin-top:60px;
+			}
+			li {
+				 position: relative;
+				  
+
+
+        	 
+       		 display: table-row;
+
+
+       		 
+    		}
+
+    		.listItem div {
+      		  display: table-cell;
+      		  
+
+
+      		   
+
+    		}
+
+
+
+
+			 
+
+		 
+			 
+			
+			.description-wrapper {
+
+				 
+				 
+				overflow:hidden;
+				position:absolute;
+				margin-top:35px;
+				line-height: 17px;
+
+				
+				height: 2.6em;
+
+
+
+			}
+
+			.description-wrapper > p{
+
+				/*
+
+				 position: relative;
+				 overflow:hidden;
+				 margin-left:10px;
+				 margin-right: 10px;
+
+				 
+				margin-top:3px;
+				*/
+
+
+				 position: relative;
+				margin-top:0px;
+				margin-left:2px;
+				 margin-right: 8px;
+				 font-family: 'Muli';
+				  
+				 font-size:12px;
+
+				text-overflow: ellipsis;
+  				word-wrap: break-word;
+ 			 overflow: hidden;
+ 			 max-height: 2.75em;
+ 			 line-height: 1.3em;
+
+				color:#37332B;
+				
+
+
+
+
+			}
+			.description-wrapper > p > a{
+
+				text-decoration: none;
+				color:blue;
+
+
+
+
+			}
+			.byline{
+
+				
+				 
+				max-height: 1.6em;
+				margin-top:00px;
+				font-size:10px;
+				overflow:hidden;
+				margin-right:8px;
+				margin-left:2px;
+				margin-bottom:10px;
+
+				color:#7D7366;
+			}
+			.mainByline{
+
+				
+				position:absolute;
+				max-height: 1.6em;
+				margin-top:5px;
+				font-size:10px;
+				overflow:hidden;
+				margin-right:8px;
+				margin-left:2px;
+
+				color:#7D7366;
+			}
+			.subtitle{
+
+
+
+				color:black;
+				font-size:20px;
+				font-family:'Lato';
+			}
+
+
+
+
+
+
+
+.carousel {
+  height: auto;
+  margin-bottom: -20px;
+  /*margin-left:-20px;*/
+  margin-right: -20px;
+  margin-top:30px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 100%;
+  
+   
+  
+}
+.carousel-inner > .item > img {
+  position: relative;
+  vertical-align:text-top;
+  background-position: center center;
+   background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+   width:auto; /*ADJUST???????????????????*/
+    
+    
+  height: 100%;
+   
+  
+}
+.carousel-control.left {
+ 
+background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, .0000) 0%), color-stop(rgba(0, 0, 0, .0) 0%));
+background-image: linear-gradient(to right, rgba(0, 0, 0, .0000) 0%, rgba(0, 0, 0, .0) 0%);
+ 
+}
+.carousel-control.right {
+ 
+background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, .0000) 0%), color-stop(rgba(0, 0, 0, .0) 0%));
+background-image: linear-gradient(to right, rgba(0, 0, 0, .0000) 0%, rgba(0, 0, 0, .0) 0%);
+ 
+}
+.carousel-indicators{
+
+width: inherit;
+visibility: hidden;
+
+}
+.category{
+
+
+	color:red;
+	text-decoration: none;
+}
+.arch-articles{
+
+	text-decoration: none !important;
+
+}
+.dividing-line{
+
+	 
+	margin-top:10px;
+}
+@media(screen and (device-aspect-ratio: 2/3){
+
+	#latest-arch-news {
+position: absolute;
+margin-top: 30px;
+margin-left: -15px;
+margin-right: -25px;
+width: 320px;
+}
+}
+
+
+
+		</style>
+
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		 
+		<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					classes: 'mm-light'
+				});
+			});
+		</script>
+
+	</head>
+	<body>
+		<div data-role="page">
+		<div id="static">
+		  <div id="header">
+		   
+				<a  style="color:# 7D7366; text-decoration:none;" href="#menu"><img id="list-btn-img" src="img/nav-bar-list.png"/></a>
+			 	
+			 
+					<a href="index.html" class="home-btn"><img id="home-btn-img" src="img/nav-bar-home.png"/></a>
+			 	
+				<span id="header-archnews-title" class="header-title">ArchNews</span>
+			
+			</div>
+ 		</div>
+			<div id="content">
+
+			
+			  
+		 
+			<!-- <div id="latest-news"></div> -->
+
+	<div id="main-article">
+
+			  
+       <a class="article1-link" style="text-decoration:none" href="archNews-dynamicSwiper.html?index=0">
+              <div class="title-wrapper-archnews">  
+                  <span class="article-Title" id="main-title" style="font-size:14px; color:#EF4135"></span><br>
+                  <span class="subtitle" id="subtitle" > Loading...</span>
+                  <p class="mainByline" id="mainArticleByline"> </p>
+              </div><!--//title rticle wrapper-->
+
+
+        <!--*************Carousel 1***********************************-->
+
+        <div id="carousel-1" class="carousel slide" data-ride="carousel">
+     			 <!-- Indicators -->
+        		<ol class="carousel-indicators" id="carouselIndicators">
+        		  
+       	    	</ol>
+     		 <div class="carousel-inner" id="innerCarousel">
+       			  
+      		</div><!--//carousel - inner-->
+     			 <a class="left carousel-control" href="#myCarousel" data-slide="prev"> </a>
+    			  <a class="right carousel-control" href="#myCarousel" data-slide="next"> </a>
+        </div>   <!--//end Carousel-->
+
+	</a>		 
+
+	<ul id="latest-arch-news"></ul>
+
+
+			 
+	</div><!--//main Article-->
+
+
+	</div><!--content-->
+
+			<nav id="menu">
+				<ul style="font-family:'Muli'; margin-top:70px">
+				<li><a href="index.html">Home</a></li>
+					<li style="padding-left:5%;padding-top:8px;background-color:#E6E6E6;height:5%; padding-bottom:5px"> AIA National</li>
+					
+					<li style="background-color:#FFFFFF; margin-left:10%"><a href="nat-architect.html">AIArchitect</a></li>
+					<li style="padding-left:5%;padding-top:8px; background-color:#E6E6E6;height:5%; padding-bottom:5px"> AIA California Council</li>
+					<li style="background-color:#FFFFFF; margin-left:10%"><a href="cal-relevance.html">Relevance</a></li>
+					<li style="padding-left:5%;padding-top:8px; background-color:#E6E6E6;height:5%; padding-bottom:5px"> AIA East Bay</li>
+					<li style="background-color:#FFFFFF; margin-left:10%"><a href="archnews.html">ArchNews</a></li>
+					<li style="background-color:#FFFFFF; margin-left:10%"><a href="aiaeb-calendar.html">Calendar</a></li>
+					<li style="background-color:#FFFFFF; margin-left:10%"><a href="aiaeb-news.html">News</a></li>
+				</ul>
+			</nav>
+
+
+
+
+
+
+		</div><!--data role page-->
+
+		 
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+
+
+	 <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+            app.initialize();
+        </script>
+
+
+	<script src="js/bootstrap.js">
+
+        </script>
+
+	<script>
+
+	var a=navigator.onLine;
+ if(a){
+  console.log('we are online...');
+ }else{
+   displayNetworkError();
+   console.log('we are NOT online...');
+ }
+
+       function displayNetworkError(){
+
+
+  document.getElementById("content").innerHTML="<p style='margin-top:20%'>You are not connected to the internet. Please Check your connection and try again...</p><br><br><input type='button' value='try again' onclick='window.location.reload();'></input>";
+ }
+
+	$(document).ready(function(){
+		console.log('functioning');
+
+		var windowWidth=$(window).width();
+
+		var tempImgUrl="";
+  	 var arrOfImages=[];
+  	 var activeItem="";
+  	 var indicators="";
+  	 var slideData="";
+  	  var indexOfArticle=0;
+  	  var entrydate="";
+
+  	var entrydatestr='';
+ 	 var byline="";
+  	var category="";
+  	var articleLink="";
+  	var dataToStore=[];
+  	var itemToPass="";
+  	var profileIndex="";
+
+		 
+ 
+
+var loadProfileCarousel= function(items){
+
+	 tempImgUrl="";
+  	 arrOfImages=[];
+  	  activeItem="";
+  	  indicators="";
+  	  slideData="";
+  	  var mainArticleTitle="";
+  	   var mainArticleAuhtor="";
+  	   var mainContent="";
+  	   var mainArticleDesc="";
+  	   var mainArticleDate="";
+  	    
+
+  	  for (var i=0; i<items.length; i++ ){
+
+  	  	var categoryToCompare=items[i].getElementsByTagName('title')[0].firstChild.nodeValue;
+  	  	console.log("Category to compare: " + " " + categoryToCompare); 
+
+  	  	var match=categoryToCompare.match(/Project Profile/g);
+
+
+
+
+  	  	if (match){
+
+
+  	  		console.log("We have a Project Profile!!!!");
+  	  		profileIndex=i;
+  	  		mainArticleTitle= items[i].getElementsByTagName('title')[0].firstChild.nodeValue;
+ 	 		console.log(items);
+ 	 		mainArticleAuhtor=items[i].getElementsByTagName('author')[0].firstChild.nodeValue;
+
+ 	 		mainContent = items[i].getElementsByTagName('encoded')[0].firstChild.nodeValue;
+
+ 	 		mainArticleDesc=items[i].getElementsByTagName('description')[0].firstChild.nodeValue;
+
+ 			 mainArticleDate=items[i].getElementsByTagName('pubDate')[0].firstChild.nodeValue;
+ 	 		 articleLink=items[i].getElementsByTagName('link')[0].firstChild.nodeValue;
+
+
+ 	 		 document.getElementById("main-title").innerHTML= items[i].getElementsByTagName('category')[0].firstChild.nodeValue;
+
+ 	 		 document.getElementById("mainArticleByline").innerHTML= byline;
+  	  	}  
+  	  }
+
+	
+
+	 
+
+ 	 tempDiv = document.createElement("div");
+     tempDiv.innerHTML=mainContent;
+
+
+
+     //get images from content
+     myImage = tempDiv.getElementsByTagName("img");
+
+    if(myImage[0]){
+     imgURL= myImage[0].src;
+    
+     
+    } else {
+
+         imgURL= "img/grey-screen-logo.png";
+    	console.log('Post contains no images');
+
+    }
+
+    for (var j=0; j<myImage.length; j++){
+
+
+       tempImgUrl=myImage[j].src;
+
+    	arrOfImages.push(tempImgUrl);
+    
+    }
+
+ 	 console.log(arrOfImages);
+
+ 	 if (arrOfImages.length>0){
+
+
+ 	 	console.log("we have images");
+
+ 	 	  
+           
+
+           for(var s=0; s<arrOfImages.length-1; s++){
+
+             indicators+='<li data-target="#carousel-1 data-slide-to="'+s+'" ></li>';
+
+             if (s===0){
+
+             	slideData='<div class="item active"><img  id="image'+0+'" src="'+arrOfImages[0]+'" alt="First slide"></div>';
+             }else{
+
+             	slideData+='<div class="item"><img  src="'+arrOfImages[s]+'"></div>';
+             }
+             
+
+             }
+
+
+
+
+
+
+
+ 	 }
+
+ 
+
+ 	 entrydate=new Date(mainArticleDate);
+
+   entrydatestr=' '+(entrydate.getMonth()+1)+"/"+entrydate.getDate()+"/"+entrydate.getFullYear();
+   byline=mainArticleAuhtor+' '+entrydatestr;
+   //category=tags;
+  
+//desc.parentNode.removeChild
+  
+
+   itemToPass={ 'index': indexOfArticle,
+   	  				'title': mainArticleTitle,
+					'author':mainArticleAuhtor,
+					'description': mainArticleDesc,
+					'date':mainArticleDate,
+					'content': mainContent,
+					'image_sources':arrOfImages,
+					'link':articleLink
+					 
+					};
+
+
+					console.log("here is the item");
+					console.log(itemToPass);
+
+	
+
+	  dataToStore.push(itemToPass);
+
+
+
+
+
+
+ 	 document.getElementById("innerCarousel").innerHTML=slideData;
+
+ 	 document.getElementById("carouselIndicators").innerHTML=indicators;
+
+ 	 
+
+ 	 
+ 	 //now lets build carousel.
+
+  
+  
+  document.getElementById('subtitle').innerHTML=mainArticleTitle;
+
+
+
+  //$('.carousel').css('width', windowWidth);
+  $('.carousel-inner > .item > img').css('height',windowWidth/1.2);
+   
+
+};
+
+ 
+function feedLoaded(result) {
+  if (!result.error) {
+
+
+
+  	 
+  	var items = result.xmlDocument.getElementsByTagName('item');
+  	 var rssoutput = "";
+  	 var feature_output="";
+  	 var title="";
+  	 var author="";
+  	 var date="";
+  	 var desc="";
+  	 var content="";
+  	 var tempDiv='';
+  	 var myImage="";
+  	 var imgURL="";
+  	 var tags="";
+  	 
+  	 
+  	 
+
+  	 var imagehtmlString="";
+	
+	
+	
+
+
+  	  
+  	  var subject="";
+
+
+  	  console.log("The Result of the item from feed is: >>>>>>>>>>>>>>>>>>>>>>>>>" + items);
+
+  	  
+  	   
+loadProfileCarousel(items); //Do this one first. 
+console.log('Finished loading Profile Carousel...')
+
+arrOfImages=[];
+   
+    indexOfArticle=1;
+  
+   for (var i = 0; i < items.length-1; i++) {
+     item= items[i];
+
+     if(i===profileIndex){
+
+     	console.log(item);
+
+     	console.log("We already added the project profile so skip");
+     } else{ 
+
+     	console.log("Let's keep looking for project profile..");
+
+ 			console.log(item);
+
+   			title = item.getElementsByTagName('title')[0].firstChild.nodeValue;
+   			author = item.getElementsByTagName('author')[0].firstChild.nodeValue;
+   			desc = item.getElementsByTagName('description')[0].firstChild.nodeValue;
+   			date= item.getElementsByTagName('pubDate')[0].firstChild.nodeValue;
+   			content= item.getElementsByTagName('encoded')[0].firstChild.nodeValue;
+			tags=item.getElementsByTagName('category')[0].firstChild.nodeValue;
+
+
+   			 
+
+
+   			
+
+
+   			articleLink=item.getElementsByTagName('link')[0].firstChild.nodeValue;
+
+   			
+   			tempDiv = document.createElement("div");
+  			 tempDiv.innerHTML=content;
+   
+
+    		myImage = tempDiv.getElementsByTagName("img");
+
+    			if(myImage[0]){
+    				 imgURL= myImage[0].src;
+
+     
+    			} else {
+
+        		 imgURL= "img/grey-screen-logo.png"
+    			console.log('Post contains no images');
+				 }
+
+     			for (var j=0; j<myImage.length; j++){
+
+
+       			tempImgUrl=myImage[j].src;
+				arrOfImages.push(tempImgUrl);
+    			 }
+
+
+
+
+  //var imgs = content.getElementsByTagName('img');
+  // for help see: http://www.nimblekit.com/forum/viewtopic.php?f=6&t=1422
+   
+   				entrydate=new Date(date);
+
+   				entrydatestr=' '+(entrydate.getMonth()+1)+"/"+entrydate.getDate()+"/"+entrydate.getFullYear();
+  				 byline=author+' '+entrydatestr;
+  				 category=tags;
+  
+//desc.parentNode.removeChild
+  
+
+  					 itemToPass={ 'index': indexOfArticle,
+   	  						'title': title,
+							'author':author,
+							'description': desc,
+							'date':date,
+							'content': content,
+							'image_sources':arrOfImages,
+							'link':articleLink
+					 
+							};
+
+
+							console.log("here is the item");
+							console.log(itemToPass);
+
+	
+
+	  						dataToStore.push(itemToPass);
+
+/*
+  							rssoutput += ' <a class="arch-articles" href="archNews-dynamicSwiper.html?index='+indexOfArticle+'"><li class="listItem"> <p class="category">'+category+'</p><p class="snippet-title-archnews">'+title + '</p><p class="byline">by '+byline+'</p></li></a><hr class="dividing-line"/>';
+
+
+				*/			rssoutput += ' <a class="arch-articles" href="archNews-dynamicSwiper.html?index='+indexOfArticle+'"><li class="listItem"> <p class="snippet-title-archnews">'+title + '</p><p class="byline">by '+byline+'</p><p class="desc-archnews"> '+desc+'</p></li></a><hr class="dividing-line"/>';
+
+
+							indexOfArticle ++;
+							console.log(indexOfArticle);
+							arrOfImages=[];
+
+		}  
+
+  }
+
+
+
+	if (localStorage){
+	console.log("clearing local storage");
+
+	localStorage.clear();
+}
+
+ console.log("Data to store: " + dataToStore);
+	var theJSONdata =JSON.stringify(dataToStore);
+
+  localStorage.setItem('archNewsData', theJSONdata);
+   
+
+
+  document.getElementById("latest-arch-news").innerHTML = rssoutput;
+  $("p").filter(":contains('The post')").remove();
+
+  
+
+  
+
+  }  
+
+
+   
+
+}
+
+
+
+function OnLoad() {
+  // Create a feed instance that will grab Digg's feed.
+
+    
+  var feed = new google.feeds.Feed("http://aiaeb.org/category/archnews/feed/");
+
+
+
+  // Request the results in XML
+  feed.setResultFormat(google.feeds.Feed.XML_FORMAT);
+    feed.setNumEntries(13 );
+  // Calling load sends the request off.  It requires a callback function.
+  feed.load(feedLoaded);
+
+
+}
+
+google.setOnLoadCallback(OnLoad);
+
+	});
+
+	</script>
+
+
+
+</html>
