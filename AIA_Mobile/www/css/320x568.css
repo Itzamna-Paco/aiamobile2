@@ -1,0 +1,346 @@
+/*
+CSS for iPHone5, width 320, height 568
+
+
+*/
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>INDEX<<<<<<<<<<<<<<<<<<<<<*/
+body{
+
+ background-color: white;
+ overflow: hidden;
+ height: 100%;
+ font-family:'Muli 300';
+
+}
+#page-content{
+     overflow: hidden;
+     margin-top:20px;
+    background-color: white;
+    width: 100%;
+    padding:0px; margin:0px;
+
+   }
+
+
+#homelogo{
+
+    height:110px;
+    width:100%;
+    background-color:#fff;
+    text-align:center;
+   }
+   #aialogomain{
+     text-align:center;
+     margin-top:20px;
+    width:170px;
+     height:80px;
+
+   }
+   #stateAndNatlHome{
+    position:absolute;
+   	width:100%;
+   	margin-left:0px;
+   	margin-right:5px;
+   	text-align:center;
+   	 margin-top: 0px;
+
+   }
+
+   #nationalHomepPic{
+   
+   margin-left:-2px;
+   	width:159px;
+   	height:180px;/* adjust*/
+   	z-index: 1;
+   }
+
+   #stateHomePic{
+   margin-right:-2px;
+   width:159px;
+   	 
+   	height:180px;/* adjust*/
+   	z-index: 1;
+   	 
+   }
+
+   .homelabels{
+
+ position:absolute;
+ width:100%;
+ margin-top:60px;/* adjust*/
+
+   }
+   .homeLabel1{
+
+   	float:left;
+   	 position:absolute;
+   	 	/*background-color:rgba(0, 0, 0, 0.5);*/
+   	margin-left: 4px;
+     margin-top:75px;
+   	color:#FFFFFF;
+   	z-index: 2;
+   	font-size: 16pt;
+   	 width:36%;
+   	font-family:'Source Sans Pro';font-style: italic; font-weight:400;
+text-align: center;
+    margin-top:90px;
+    padding-right:23px;
+      padding-left:15px;
+  
+
+   }
+   .homeLabel2{
+
+   	float:left;
+   	 position:absolute;
+   		 text-align: center;
+   	/*background-color:rgba(0, 0, 0, 0.5);*/
+   	margin-left: 51%;
+   	 color:#FFFFFF;
+   	 margin-top:90px;
+    margin-right:0px;
+      padding-right:23px;
+      padding-left:15px;
+       
+   	 width:36%;
+   	z-index: 2;
+   	font-size: 16pt;
+   	font-family:'Source Sans Pro';font-style: italic; font-weight:400;
+
+   }
+   #aiaLocalHome{
+
+   	position:absolute;
+   	width:100%;
+    height:160px; /* adjust*/
+   	margin-top:219px;
+   	margin-left:0px;
+    margin-right:0px;
+     
+   }
+   #locationLabel{
+
+     position:absolute;
+     margin-top:74px;
+   
+    	 height:39px;
+       
+
+
+   }
+   .label1{
+     font-size: 18px;;
+   	font-family: 'Muli';
+   	color:#7d7366;
+   	margin-top: 112px; /* adjust*/
+    text-align:left;
+   	float:left;
+   	margin-left:40px;
+    text-shadow:0 0 0 #fff;
+   }
+   .label2{color:#7d7366;
+     font-size: 18px;
+   	font-family: 'Muli';
+   	text-align:right;
+   	margin-top: 112px; /* adjust*/
+   	position: absolute;
+   	float:right;
+   	margin-left:180px;
+    text-shadow:0 0 0 #fff;
+   }
+  
+   .label3{color:#7d7366;
+     font-size: 18px;
+     position:absolute;
+   	font-family: 'Muli';
+   	margin-left: 38%;
+   	margin-top: 340px;
+   	 text-align: center;
+     background: 
+   	 text-shadow:0 0 0 #fff;
+   }
+ 
+ #aia-eb-img{
+
+    position: absolute;
+    margin-top:-150px;
+
+
+    width:100%;
+    height: 180px; /* adjust*/
+
+
+   }
+	#aia-eb-btnLabels{
+
+
+
+
+		position: absolute;
+		height:40px;
+	margin-left:0;
+  margin-top:381px;/* adjust*/
+  width:100%;
+
+  z-index: 9;
+  
+	}
+
+
+   #archnewslink{
+   	position: absolute;
+    z-index: 2;
+    margin-top:-155px;
+    margin-bottom:0px;
+   	float:left;
+    text-align: left;
+    height: 155px;/* adjust*/
+
+   	  
+     text-decoration: none;
+   	color: white;
+    width:82px;
+   	margin-left: 0px;
+    border-style: solid;
+    border-left-width: 0;
+     border-top-width: 0;
+      border-bottom-width: 0;
+
+	 padding-left:12px;
+   padding-right: 9px;
+   padding-top: 0px;
+   padding-bottom: 30px;
+	
+	
+   }
+   #calendarlink{
+
+position: absolute;
+    z-index: 2;
+    margin-top:-155px;
+    margin-bottom:0px;
+    float:left;
+    text-align: left;
+    height: 155px;/* adjust*/
+    text-decoration: none;
+
+    /*background-color:rgba(0, 0, 0, 0.5);*/
+    color: white;
+    width:82px;
+    margin-left: 106px;
+    border-style: solid;
+    border-left-width: 0;
+     border-top-width: 0;
+      border-bottom-width: 0;
+      cursor:pointer;
+
+   padding-left:12px;
+   padding-right: 9px;
+   padding-top: 0px;
+   padding-bottom: 30px;
+
+   }
+#newslink{
+  position: absolute;
+    z-index: 2;
+    margin-top:-155px;
+    margin-bottom:0px;
+    float:left;
+    text-align: left;
+    height: 155px;/* adjust*/
+    color: white;
+    width:82px;
+    margin-left: 211px;
+    border-style: solid;
+    border-right-width: 0;
+    border-left-width: 0;
+     border-top-width: 0;
+      border-bottom-width: 0;
+      cursor:pointer;
+
+   padding-left:12px;
+   padding-right: 9px;
+   padding-top: 0px;
+   padding-bottom: 30px;
+
+
+}
+
+   #eb-home-button-headings1{
+
+   font-family:'Source Sans Pro';font-style: italic; font-weight:400;
+  font-size: 16pt;
+  margin-top:155px;/* adjust*/
+    
+  
+       
+text-shadow:0 0 0 #fff;
+   }
+
+
+   #eb-home-button-headings2{
+   font-family:'Source Sans Pro';font-style: italic; font-weight:400;
+  font-size: 16pt;
+  margin-top:155px;/* adjust*/
+    
+  
+       
+text-shadow:0 0 0 #fff;
+   }
+
+   #eb-home-button-headings3{
+   	    font-family:'Source Sans Pro';font-style: italic; font-weight:400;
+  font-size: 16pt;
+  margin-top:155px;/* adjust*/
+  text-align: center;
+    
+  
+       
+text-shadow:0 0 0 #fff;
+
+   }
+   .nat-cal-pics{
+
+  	 	transition: 2s;
+	 
+	-moz-transition: 2s;
+	-ms-transition: 2s;
+	-webkit-transition: 2s;
+  }
+
+   #eastbayLabel{
+    position:absolute;
+    margin-top:80px;/*adjust*/
+    width:100%;
+   }
+   #local-leftpanel{
+
+
+height:100%;
+border-style: solid;
+
+   }
+   #relevance-btn{
+    position:absolute;
+    width:158px;
+    height:180px;
+    margin-top:-60px;
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.40) 100%, rgba(0, 0, 0, 0.5) 20%);
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.40) 100%, rgba(0, 0, 0, 0.5) 20%);
+
+
+   }
+   #aia-architect-btn{
+    position:absolute;
+    width:160px;
+    height:180px;
+     
+    margin-top:-60px;
+    margin-left:51%;
+  	background-image: linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.40) 100%, rgba(0, 0, 0, 0.5) 20%);
+ 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.40) 100%, rgba(0, 0, 0, 0.5) 20%);
+
+   }
+   /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ABOUT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

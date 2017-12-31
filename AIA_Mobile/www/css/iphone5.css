@@ -1,0 +1,965 @@
+/*
+CSS for iPHone5, width 320, height 568
+
+
+*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>HEADER GENERAL <<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+body{
+
+ background-color: white;
+  overflow-x: hidden; 
+ height: 100%;
+ font-family:'Muli 300',Helvetica, Arial, sans-serif;
+
+}
+p, h1,h2,h3{
+
+    font-family:'Muli',Helvetica, Arial, sans-serif;
+    margin-left:12px;
+    margin-right:12px;
+
+}
+
+#page-content{
+     /*overflow: hidden;*/
+     margin-top:20px;
+    background-color: white;
+    width: 100%;
+    padding:0px; margin:0px;
+
+   }
+   #header a.right,
+.header a.right
+{
+  left: auto;
+  right: 10px;
+}
+
+#content,
+.content
+{
+  padding: 20px;
+   background-color:white;
+         font-family:'Muli',Helvetica, Arial, sans-serif;
+
+        
+}
+ #content{
+        position: absolute;
+
+          
+         
+         margin-top:30px;
+         width:280px;
+
+
+      }
+
+      #static{
+
+        width:100%;
+        height:70px;
+
+         position:fixed;
+         z-index: 2;
+         
+
+
+      }
+
+
+      #header{
+         
+        border-style: solid;
+        background-color:white;
+        border-top-color:white;
+        border-right-color:white;
+         border-left-color:white;
+        border-bottom-color: gray;
+        border-bottom-width: 1px;
+        /*margin-bottom: 100px;*/
+        margin-top:0px;
+        height:70px;
+
+
+      }
+       
+      
+      .header-title{
+
+        /*font-family:'Source Sans Pro';font-style: italic; font-weight:400; */
+       /*
+        font-family:'Muli';
+        position:absolute;
+        text-align: left;
+        margin-top:8%;
+        margin-left:-10%;
+        color:red;
+        font-size:25px;
+        font-weight:900;
+        */
+      }
+      .home-btn{
+
+        
+        /*margin-left:19%;*/ /*****************ADJUST********************/
+       /* margin-top:20px;*/
+
+
+
+
+      }
+      #home-btn-img{
+/*
+        width: 40px;
+        height:40px;
+         
+*/
+
+      }
+      #list-btn-img{
+/*
+        width:40px;
+        height:40px;
+        
+*/
+
+
+      }
+
+
+ 
+     
+      .mm-list{
+
+        font-family:'Muli',Helvetica, Arial, sans-serif;
+       }
+      
+      
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>INDEX<<<<<<<<<<<<<<<<<<<<<*/
+
+#aia-East-Bay{
+position: absolute;
+width:100%;
+height:30%;
+margin-top:14%;
+bottom: 9%;
+ 
+
+}
+#stateAndNatlHome {
+width: 100%;
+margin-left: 0px;
+margin-right: 0px;
+text-align: center;
+margin-top: 7%;
+/* height: 57%; */
+}
+#homelogo{
+
+     height: 14%;
+width: 100%;
+background-color: white;
+text-align: center;
+margin-top: 15px;
+/* margin-bottom: -20px; */
+
+    }
+ 
+   #aialogomain{
+     text-align:center;
+     margin-top:10px;
+    width:220px;
+     height:100px;
+
+   } 
+
+   .homelabels{
+  position: absolute;
+  margin-top:-74px;  /*--------ADJUST ME*/
+width:100%;
+  height:8%;
+  
+   
+
+}
+   .homeLabel1{
+/*RELEVANCE*/
+      
+   top:40%;
+    
+
+   }
+   .homeLabel2{
+/*AIArchitEct*/
+    
+    
+     top:40%;
+    
+
+   }
+
+   #eb-home-button-headings1{
+
+   font-family:'Source Sans Pro',Helvetica, Arial, sans-serif;font-style: italic; font-weight:400;
+  font-size: 16pt;
+  margin-top:25px;/* adjust*/
+    
+  
+       
+text-shadow:2px 2px 8px #151515;
+   }
+
+
+   #eb-home-button-headings2{
+   font-family:'Source Sans Pro',Helvetica, Arial, sans-serif;font-style: italic; font-weight:400;
+  font-size: 16pt;
+  margin-top:25px;/* adjust*/
+    
+  
+       
+text-shadow:2px 2px 8px #151515;
+   }
+
+   #eb-home-button-headings3{
+   	    font-family:'Source Sans Pro',Helvetica, Arial, sans-serif;font-style: italic; font-weight:400;
+  font-size: 16pt;
+  margin-top:25px;/* adjust*/
+  text-align: center;
+    
+  
+       
+text-shadow:2px 2px 8px #151515;
+
+   }
+   .nat-cal-pics{
+
+  	 	transition: 2s;
+	 
+	-moz-transition: 2s;
+	-ms-transition: 2s;
+	-webkit-transition: 2s;
+  }
+
+    
+   #local-leftpanel{
+
+
+height:100%;
+border-style: solid;
+
+   }
+    
+    
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>((((((((((((((((((((ABOUT))))))))))))))))))))<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+#aiaAboutlogomain{
+
+				width:220px;
+				position:relative;
+        margin-top:20%;
+        top:0%;
+			 
+				margin-left:-40px;
+			}
+			#aboutWrapper{
+
+				margin-top:40px;
+			}
+
+			 
+
+      #header-about-title{
+ 
+
+        color:#224E84;
+        background-color:white;
+      }
+      
+			
+			.photoCredits{
+				font-size:80%;
+
+
+
+			}
+
+      /*>>>>>>>>>>>>>>>>>>>>>>>>RELEVANCE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+
+       
+
+
+      #header-relevance-title{
+
+        /*font-family:'Source Sans Pro';font-style: italic; font-weight:400; */
+        
+        color:#7D7366;
+        background-color:white;
+      }
+     
+      .story-snippet{
+
+        /*position:relative;
+
+        margin-top:3px;
+        background-color: lightgray;
+        width:96%;
+        margin-left:3px;
+        height:97px;
+        margin-bottom:3px;
+        */
+
+
+
+      }
+      .story-img{
+        float:left;
+        position: relative;
+        vertical-align:text-top;
+
+
+        border-radius:0px;
+        width:99px;
+        height:97px;
+
+        background-position: center center;
+                background-repeat: no-repeat;
+
+
+      }
+      
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+         display: table;
+         width: 98%;
+          
+         border-spacing:5px;
+         margin-top:60px;
+      }
+      li {
+         position: relative;
+
+
+           
+           display: table-row;
+
+           
+        }
+
+        .listItem div {
+            display: table-cell;
+
+
+             
+
+        }
+
+
+
+
+      #latest-news-relevance{
+
+        position:absolute;
+        margin-top:30px;
+        margin-left:-15px;
+        width:100%;
+
+      }
+
+      .snippet-left-relevance{
+         
+          
+        width:20%;
+
+         
+
+        
+      }
+      .snippet-right-relevance{
+
+           
+        width:80%;
+         
+         
+
+
+      }
+      .snippet-title-relevance{
+        
+        position: absolute;
+        /*width:inherit;*/
+
+
+
+
+         font-style: bold;
+        font-size:16px;
+        line-height:110%;
+        font-family:'Muli',Helvetica, Arial, sans-serif;color:#201D15;
+        margin-top:5px;
+        max-height: 2.2em;
+        margin-right:8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+          word-wrap: break-word;
+         
+        margin-left:2px;
+
+         
+      }
+      .description-wrapper {
+
+         
+         
+        overflow:hidden;
+        position:absolute;
+        margin-top:40px;
+        font-size:13px;
+
+        
+        height: 2.60em;
+
+
+
+      }
+
+      .description-wrapper > p{
+
+        /*
+
+         position: relative;
+         overflow:hidden;
+         margin-left:10px;
+         margin-right: 10px;
+
+         
+        margin-top:3px;
+        */
+
+
+         position: relative;
+        margin-top:5px;
+        margin-left:2px;
+         margin-right: 8px;
+         font-family: 'Muli',Helvetica, Arial, sans-serif;
+          
+         font-size:12px;
+
+        text-overflow: ellipsis;
+          word-wrap: break-word;
+       overflow: hidden;
+       max-height: 3.40em;
+       line-height: 110%;
+
+        color:#37332B;
+        
+
+
+
+
+      }
+      .description-wrapper > p > a{
+
+        text-decoration: none;
+        color:blue;
+
+
+
+
+      }
+      .byline{
+
+        font-family:'Muli',Helvetica, Arial, sans-serif;  font-weight:300;
+        position:absolute;
+        max-height: 1.6em;
+        margin-top:85px;
+        font-size:10px;
+        overflow:hidden;
+        margin-right:8px;
+        margin-left:2px;
+
+        color:#7D7366;
+      }
+
+      /*****<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<(((((((((((((((((NAT-AIARCHITECT)))))))))))))))))>>>>>>>>>>>>>>>>>>>>>*/
+
+      #latest-news-aiarchitect{
+
+        position:absolute;
+        margin-top:30px;
+        margin-left:-10px;
+        width:95%;  /**************ADJUST HERE************/
+
+    }
+      .listItem-aiarchitect {
+
+          display: table-cell;
+          position: relative;
+            vertical-align:text-top;
+            margin-top:10px;
+            border-radius:0px;
+        width:520px;
+        height:135px;
+      }
+      .snippet-title-aiarchitect{
+        
+        position: absolute;
+        font-style: bold;
+        font-size:16px;
+         
+        font-family:'Lato', Helvetica,Arial,sans-serif;color:#201D15;
+        margin-top:10px;
+        max-height: 2.2em;
+        margin-right:8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+          word-wrap: break-word;
+         
+        margin-left:2px;
+      }
+      .description-wrapper-aia {
+        overflow:hidden;
+        position:absolute;
+        margin-top:55px;
+        height: 4.75em;
+        font-size:12px;
+      }
+
+      .description-wrapper-aia > p{
+        position: relative;
+        margin-top:15px;
+        margin-left:2px;
+         margin-right: 8px;
+         font-family: 'Muli',Helvetica, Arial, sans-serif;
+          
+         font-size:12px;
+
+        text-overflow: ellipsis;
+          word-wrap: break-word;
+       overflow: hidden;
+       max-height: 3.75em;
+       color:#37332B;
+      }
+      .description-wrapper-aia > p > a{
+
+        text-decoration: none;
+        color:blue;
+      }
+      .byline-aia{
+
+        font-family:'Muli',Helvetica, Arial, sans-serif; font-weight:300;
+        
+        max-height: 1.6em;
+         position:absolute;
+         margin-top:120px;
+        font-size:10px;
+        overflow:hidden;
+        margin-right:8px;
+        margin-left:2px;
+
+        color:#7D7366;
+      }
+
+      /*****<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<(((((((((((((((((RELEVANCE-DYNAMIC-SWIPER)))))))))))))))))>>>>>>>>>>>>>>>>>>>>>*/
+
+
+#header-relevance-dynamic-title{
+
+  color:#7D7366;
+  margin-top:27px;
+}
+.alignleft{
+width:320px;
+height:auto;
+
+}
+.alignnone{
+width:300px;
+height:auto;
+
+}
+.size-full{
+
+  width:300px;
+
+  height:auto;
+   
+  margin-right: 0px;
+}
+
+.size-large{
+ width:300px; 
+}
+#navCloseButton{
+
+    /*    width:40px;
+        height:40px;
+        margin-top:-5px;
+      */  
+      }
+      .share-btn{
+
+    /*     
+    margin-left:225px;
+    margin-right:8px;
+     
+    width:40px;
+    height: 40px;
+    margin-top:22px;
+
+*/
+
+      }
+
+      .carousel {
+  height: 190px;
+  margin-bottom: 0px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 190px;
+  
+}
+.carousel-inner > .item > img {
+  position: relative;
+  vertical-align:text-top;
+  background-position: center center;
+   background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  /*min-width: 100%;*/
+  height: 190px;
+}
+.article-title{
+
+
+   font-family:'Muli',Helvetica, Arial, sans-serif;
+   float:left; margin-top:100px;
+    font-size:30px;  overflow: hidden; 
+    text-overflow:ellipsis; 
+    display: -webkit-box; 
+    width:87%;
+
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    line-height: 40px;
+    max-height: 100%;
+     margin-left:10px;
+     margin-right:5px;
+     margin-top:100px;
+}
+.author-byline{
+font-size: 10pt;
+font-family: 'Muli',Helvetica, Arial, sans-serif;
+ 
+font-weight:300;
+
+
+}
+
+.articleText{
+
+  font-size:14pt;
+  line-height: 140%;
+   
+  margin-top:10px;
+
+}
+.wp-caption-text{
+
+  color:gray;
+  font-size:10px;
+  width:60ex;
+   line-height: 120%;
+}
+.title-wrapper{
+  display:block;
+   
+  height:125px;
+  background-color: white;
+   
+
+}
+
+ul.social-media{
+
+list-style-type:none;
+background-color: white;
+width:280px;
+
+margin-left:-10px;
+margin-top:10px;
+ 
+margin-bottom:-20px;
+ 
+
+
+
+}
+li.social-media-share{
+
+
+  display: block;
+}
+#test-popup{
+
+
+background-color: #D0D2D3;
+margin-top:80px;
+ 
+
+}
+ 
+
+.social-label{
+
+  color:#201D15;
+   display:block;
+   margin-top:15px;
+    
+  text-align: center;
+  padding-top:15px;
+  margin-bottom:-63px;
+   
+}
+.social-image{
+  margin-top:30px;
+ display:block;
+ text-align: center;
+ margin-left:38px;
+ margin-bottom:20px;
+  
+ 
+
+}
+/*****<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<(((((((((((((((((ARCHNEWS)))))))))))))))))>>>>>>>>>>>>>>>>>>>>>*/
+#header-archnews-title{
+color:#224E84;
+
+}
+.title-wrapper-archnews{
+
+  display:block;
+  background-color: white;
+}
+#main-article{
+        position:absolute;
+        background-color: white;
+        color:#ed2e38;
+        height:150px;
+        margin-top:30px;
+         width:100%;
+      }
+
+      #latest-news{
+
+        position:absolute;
+        margin-top:30px;
+        margin-left:-15px;
+        margin-right: -25px;
+        width:93%;
+
+
+      }
+       #latest-arch-news{
+
+        position:absolute;
+        margin-top:30px;
+        margin-left:-15px;
+        margin-right: -25px;
+        width:320px;
+
+
+      }
+
+.snippet-title-archnews{
+        
+        
+
+
+
+
+         font-style: bold;
+        font-size:18px;
+        line-height:130%;
+        font-family:'Muli',Helvetica, Arial, sans-serif;color:#ed2e38 !important;
+        margin-top:0px;
+        max-height: 2.6em;
+        margin-right:8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+          word-wrap: break-word;
+         
+        margin-left:2px;
+
+         
+      }
+      .desc-archnews{
+
+        font-size:14px;
+        line-height:130%;
+        font-family:'Muli',Helvetica, Arial, sans-serif;
+        color:#201D15 !important;
+        margin-top:55px;
+        max-height: 3.6em;
+        margin-right:8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+          word-wrap: break-word;
+         
+        margin-left:2px;
+
+
+      }
+
+      }
+      /*****<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<(((((((((((((((((ARCHNEWS-DYNAMIC SWIPER)))))))))))))))))>>>>>>>>>>>>>>>>>>>>>*/
+
+
+      #header-archnews-dynamic-title{
+
+        color:#224E84;
+
+
+
+      }
+       /*****<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<(((((((((((((((((CALENDAR)))))))))))))))))>>>>>>>>>>>>>>>>>>>>>*/
+
+
+      #header-calendar-title{
+
+        color:#224E84;
+
+
+
+      }
+      #calendar-frame{
+
+        overflow: hidden;
+        width:320px;
+        margin-left:-15px;
+
+        position: absolute;
+        margin-top:24px;
+
+
+
+
+      }
+
+ /*****<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<(((((((((((((((((AiAEB-NEWS)))))))))))))))))>>>>>>>>>>>>>>>>>>>>>*/
+
+
+      #header-aiaebnews-title{
+
+        color:#224E84;
+
+    }
+
+
+       
+        
+      .story-img-aiaebNews{
+        float:left;
+        position: relative;
+        vertical-align:text-top;
+
+
+        border-radius:0px;
+        width:99px;
+        height:97px;
+
+        background-position: center center;
+                background-repeat: no-repeat;
+
+
+      }
+      
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+         display: table;
+         width: 98%;
+         border-spacing:5px;
+         margin-top:60px;
+      }
+      li {
+         position: relative;
+
+
+           
+           display: table-row;
+
+           
+        }
+
+        .listItem-aiaebNews div {
+            display: table-cell;
+
+
+             
+
+        }
+
+
+
+ 
+
+      .snippet-left-aiaebNews{
+         
+          
+        width:20%;
+
+         
+
+        
+      }
+      .snippet-right-aiaebNews{
+
+           
+        width:80%;
+         
+         
+
+
+      }
+
+      .snippet-title-aiaebNews{
+        
+        position: absolute;
+         
+
+
+
+
+
+         font-style: bold;
+        font-size:16px;
+         
+        font-family:'Lato';color:#201D15;
+        /*margin-top:5px;*/
+        max-height: 2.5em;
+        margin-right:8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+          word-wrap: break-word;
+          /*width:67%;*/
+         
+        margin-left:2px;
+
+         
+      }
+         
