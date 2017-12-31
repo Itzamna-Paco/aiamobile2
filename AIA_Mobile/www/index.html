@@ -1,60 +1,526 @@
-<!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
-
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
+<!DOCTYPE html> 
 <html>
 
+<!--SoME LINKS TO AID IN DEV  
+
+http://jsfiddle.net/montyhog/SaYUe/9/
+
+-->
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-    <!-- Good default declaration:
-    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-        * Enable inline JS: add 'unsafe-inline' to default-src
-        * Enable eval(): add 'unsafe-eval' to default-src
-    * Create your own at http://cspisawesome.com
-    -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+ 
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1, user-scalable=no"> 
+    <title>AIA Home</title> 
 
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
-</head>
 
-<body>
-    <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready, cabron!</p>
+
+
+    
+    <script src="js/jquery-3.2.1.js"></script>
+   <script src="js/jquery.mobile-1.4.3.min.js"></script>
+   <link rel="stylesheet" href="css/jquery.mobile-1.4.3.min.css" />
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic' rel='stylesheet' type='text/css'>
+
+    
+   
+
+     <link  type="text/css" rel="stylesheet" href="css/base-style.css"/>
+
+      
+    
+</head> 
+
+<body style="overflow: hidden;"> 
+ 
+
+ 
+ <div class="logo-box jumbotron">
+      <div class="container-fluid">
+         
+         <a href="aia-about.html"   rel="external">
+         	<img id="aialogomain" src="img/aia-logo-3.png"  />
+         </a>
+         
+      </div>
+    </div>
+<div class="container-fluid">
+ 
+	<div class="row">
+
+		<div id="aia-East-Bay" class="col-md-1">
+	          <a id=""   rel="external" href="aiaeb.html"> 
+	          <img   id="aia-eb-img"/>
+	          <h3  class="home-label" id="home-heading-top" >AIA East Bay</h3>
+          </a>
+
         </div>
     </div>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
-</body>
+        <div class="row blog-cal-row">
 
+		   <div id=" " class="col-xs-6 col-md-4">
+	          <a id=""   rel="external" href="archnews.html"> 
+	          	<img   id="nationalHomepPic"/>
+	          	<p class="home-label" id="home-heading-bottom-left" >Blog</p>
+	          
+	          </a>
+	       </div>
+	        <div id=" " class="col-xs-6 col-md-4">
+	          <a id=""   rel="external" href="archnews.html"> 
+	          	<img   id="stateHomePic"/>
+	          	<p class="home-label" id="home-heading-bottom-right" >Calendar</p>
+	          
+	          </a>
+	       </div>
+          
+
+        </div>
+
+	</div>
+
+</div>
+
+    
+
+
+    <!-- /content -->
+ 
+
+
+ 
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+
+
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+       <script type="text/javascript">
+        var a=navigator.onLine;
+ if(a){
+  console.log('we are online...');
+ }else{
+   displayNetworkError();
+   console.log('we are NOT online...');
+ }
+
+       function displayNetworkError(){
+
+
+  document.getElementById("page-content").innerHTML="<p>You are not connected to the internet. Please Check your connection and try again...</p><br><br><input type='button' value='try again' onclick='window.location.reload();'></input>";
+ }
+ 
+	
+		$(document).ready(function(){
+ 
+
+    //lets build an object to hold the image and the data:
+console.log("hey you! ");
+var decks=[
+    {
+        "id": "relevance",
+        "pictures": [
+            {
+                "index": "relevance1.jpg",
+                "month": "1",
+                "projectTitle": "Hillside House",
+                "arq": "Field Architecture",
+                "photoCreds": "Bruce Demonte",
+                "location": "Portola Valley, CA"
+            },
+            {
+                "index": "relevance2.jpg",
+                "month": "2",
+                "projectTitle": "Brecht Residence",
+                "arq": "DUB Studios",
+                "photoCreds": "DUB Studios",
+                "location": "Santa Monica, CA"
+            },
+            {
+                "index": "relevance3.jpg",
+                "month": "3",
+                "projectTitle": "UC Irvine Contemporary Arts Center",
+                "arq": "Ehrlich Architects",
+                "photoCreds": "Lawrence Anderson/ESTO",
+                "location": "Irvine, CA"
+            },
+            {
+                "index": "relevance4.jpg",
+                "month": "4",
+                "projectTitle": "Fresno Community College, Historic Old Administration Building",
+                "arq": "ELS Architecture adn Urban Design",
+                "photoCreds": "David Wakely",
+                "location": "Fresno, CA"
+            },
+            {
+                "index": "relevance5.jpg",
+                "month": "5",
+                "projectTitle": "Oakland Fox Theater",
+                "arq": "ELS Architecture",
+                "photoCreds": "David Wakely",
+                "location": "Oakland, CA"
+            },
+            {
+                "index": "relevance6.jpg",
+                "month": "6",
+                "projectTitle": "Pico Branch Library",
+                "arq": "Koning Eizenberg Architecture, Inc.",
+                "photoCreds": "Eric Staudenmaier",
+                "location": "Santa Monica, CA"
+            },
+            {
+                "index": "relevance7.jpg",
+                "month": "7",
+                "projectTitle": "CalTech Keck Institute for Space Studies",
+                "arq": "Lehrer Architects",
+                "photoCreds": "Benny Chan",
+                "location": "Pasadena, CA"
+            },
+            {
+                "index": "relevance8.jpg",
+                "month": "8",
+                "projectTitle": "UC Berkeley Biosciences Building",
+                "arq": "Smith Group JJR",
+                "photoCreds": "Huffton + Crow",
+                "location": "Berkeley, CA"
+            },
+            {
+                "index": "relevance9.jpg",
+                "month": "9",
+                "projectTitle": "DeTurk Round Barn Historic Renovation",
+                "arq": "TLCD Architecture",
+                "photoCreds": "Tim Maloney",
+                "location": "Santa Rosa, CA"
+            },
+            {
+                "index": "relevance10.jpg",
+                "month": "10",
+                "projectTitle": "Nicasio Residence (Crook Cup | Bow | Twist)",
+                "arq": "Schwartz and Architecture",
+                "photoCreds": "Bruce Demonte",
+                "location": "Nicasio, CA"
+            },
+            {
+                "index": "relevance11.jpg",
+                "month": "11",
+                "projectTitle": "680 Folsom",
+                "arq": "Skidmore, Owings & Merrill LLP",
+                "photoCreds": "Bruce Demonte",
+                "location": "San Francisco, CA"
+            },
+            {
+                "index": "relevance12.jpg",
+                "month": "12",
+                "projectTitle": "Emerson College Los Angeles",
+                "arq": "Morphosis Architects",
+                "photoCreds": "Roland Halbe",
+                "location": "Los Angeles, CA"
+            }
+        ]
+    },
+    {
+        "id": "natinonal",
+        "pictures": [
+            {
+                "index": "nat1.jpg",
+                "month": "1",
+                "projectTitle": "Edith Green Wendell Wyatt Federal Building Modernization",
+                "arq": "SERA Architects Inc.",
+                "photoCreds": "Nic Lehoux",
+                "location": " 1220 SW 3rd Avenue, Portland, Oregon",
+                "Completion Date": "May 2013"
+            },
+            {
+                "index": "nat2.jpg",
+                "month": "2",
+                "projectTitle": "Gateway Center – SUNY-ESF College of Environmental Science and Forestry",
+                "arq": "Architerra",
+                "photoCreds": "David Lamb Photography",
+                "location": "1 Forestry Drive, Syracuse, New York",
+                "Completion Date": "September 2013"
+            },
+            {
+                "index": "nat3.jpg",
+                "month": "3",
+                "projectTitle": "John & Frances Angelos Law Center",
+                "arq": "Behnisch Architekten",
+                "photoCreds": "Brad Feinknopf",
+                "location": "1401 N. Charles Street, Baltimore, Maryland",
+                "Completion Date": "April 2013"
+            },
+            {
+                "index": "nat4.jpg",
+                "month": "4",
+                "projectTitle": "Sustainability Treehouse",
+                "arq": "Mithun - Design Arq, BNIM - Arq. or Record",
+                "photoCreds": "Joe Fletcher",
+                "location": " 298 Main Street, Glen Jean, West Virginia",
+                "Completion Date": "July 2013"
+            },
+            {
+                "index": "nat5.jpg",
+                "month": "5",
+                "projectTitle": "The David and Lucile Packard Foundation Headquarters",
+                "arq": "EHDD",
+                "photoCreds": "Jeremy Bittermann",
+                "location": "343 Second Street, Los Altos, California",
+                "Completion Date": "July 2012"
+            },
+            {
+                "index": "nat6.jpg",
+                "month": "6",
+                "projectTitle": "US Land Port of Entry",
+                "arq": "Snow Kreilich Architects Inc.",
+                "photoCreds": "Paul Crosby",
+                "location": "State Highway 313, Warroad, Minnesota",
+                "Completion Date": "February 2010"
+            },
+            {
+                "index": "nat7.jpg",
+                "month": "7",
+                "projectTitle": "Wayne N. Aspinall Federal Building and U.S. Courthouse",
+                "arq": "Westlake Reed Leskosky-Design Arq. , The Beck Group - Arq. of Record",
+                "photoCreds": "Kevin G. Reeves",
+                "location": "400 Rood Avenue, Grand Junction, Colorado",
+                "Completion Date": "February 2010"
+            },
+            {
+                "index": "nat8.jpg",
+                "month": "8",
+                "projectTitle": "Wayne N. Aspinall Federal Building and U.S. Courthouse",
+                "arq": "Westlake Reed Leskosky-Design Arq. , The Beck Group - Arq. of Record",
+                "photoCreds": "Kevin G. Reeves",
+                "location": "400 Rood Avenue, Grand Junction, Colorado",
+                "Completion Date": "February 2010"
+            },
+            {
+                "index": "nat9.jpg",
+                "month": "9",
+                "projectTitle": "Iowa Utilities Board/Office of the Consumer Advocate Office Building",
+                "arq": "BNIM",
+                "photoCreds": "Assassi",
+                "location": "1375, East Court Avenue, Des Moines, Iowa",
+                "Completion Date": "January 2011"
+            },
+            {
+                "index": "nat10.jpg",
+                "month": "10",
+                "projectTitle": "Arizona State University Student Health Services",
+                "arq": "Lake|Flato Architects",
+                "photoCreds": "Bill Timmermann",
+                "location": "451 East University Drive, Tempe, Arizona",
+                "Completion Date": "May 2012"
+            },
+            {
+                "index": "nat11.jpg",
+                "month": "11",
+                "projectTitle": "Bud Clark Commons",
+                "arq": "Holst Architecture",
+                "photoCreds": "Christian Columbres",
+                "location": "655 NW Hoyt Street, Portland, Oregon",
+                "Completion Date": "June 2011"
+            },
+            {
+                "index": "nat12.jpg",
+                "month": "12",
+                "projectTitle": "Bushwick Inlet Park",
+                "arq": "Kiss+Cathcart Architects ",
+                "photoCreds": "Paul Warchol",
+                "location": "86 Kent Avenue, Brooklyn, New York",
+                "Completion Date": "October 2011"
+            }
+        ]
+    },
+    {
+        "id": "eastBay",
+        "pictures": [
+            {
+                "title": "eb1.jpg",
+                "month": "1",
+                "projectTitle": "Los Gatos Library",
+                "arq": "Noll & Tam Architects",
+                "photoCreds": "David Wakely Photography",
+                "location": "Los Gatos, CA"
+            },
+            {
+                "title": "eb2.jpg",
+                "month": "2",
+                "projectTitle": "Ashland Youth Center",
+                "arq": "RossDrulisCusenbery Architecture, Inc.",
+                "photoCreds": "Mark Singer Photography",
+                "location": "San Leandro, CA"
+            },
+            {
+                "title": "eb3.jpg",
+                "month": "3",
+                "projectTitle": "Berkeley Bowl West",
+                "arq": "Kava Massih Architects",
+                "photoCreds": "Ethan Kaplan",
+                "location": "Berkeley, CA"
+            },
+            {
+                "title": "eb4.jpg",
+                "month": "4",
+                "projectTitle": "Lipson Residence",
+                "arq": "Regan Bice Architects",
+                "photoCreds": "Regan Bice Architects",
+                "location": "Berkeley, CA"
+            },
+            {
+                "title": "eb5.jpg",
+                "month": "5",
+                "projectTitle": "Temple Sinai",
+                "arq": "Mark Horton Architecture & Michael Harris Architecture",
+                "photoCreds": "Ethan Kaplan",
+                "location": "Oakland, CA"
+            },
+            {
+                "title": "eb6.jpg",
+                "month": "6",
+                "projectTitle": "The Freight and Salvage",
+                "arq": "Marcy Wong Donn Logan Architects",
+                "photoCreds": "Billy Hustace Photgraphy",
+                "location": "Berkeley, CA"
+            },
+            {
+                "title": "eb7.jpg",
+                "month": "7",
+                "projectTitle": "Carmel Middle School Green Classroom",
+                "arq": "Arkin Tilt Architects",
+                "photoCreds": "Eric Wolfinger",
+                "location": "Carmel, CA"
+            },
+            {
+                "title": "eb8.jpg",
+                "month": "8",
+                "projectTitle": "Mojave Rivers Ranger Station",
+                "arq": "Marcy Wong Donn Logan Architects",
+                "photoCreds": "John Edward Linden Photgraphy",
+                "location": "Acton, CA"
+            },
+            {
+                "title": "eb9.jpg",
+                "month": "9",
+                "projectTitle": "Laney College Athletic Fields adn Field House",
+                "arq": "Gould Evans",
+                "photoCreds": "Matthew Millman",
+                "location": "Oakland, CA"
+            },
+            {
+                "title": "eb10.jpg",
+                "month": "10",
+                "projectTitle": "SE Division Street Housing",
+                "arq": "Kava Massih",
+                "photoCreds": "Stephen Miller Photgraphy",
+                "location": "Portland, OR"
+            },
+            {
+                "title": "eb11.jpg",
+                "month": "11",
+                "projectTitle": "Physical Sciences & Engineering Center, Foothills Community College",
+                "arq": "Ratcliff",
+                "photoCreds": "David Wakely Photgraphy",
+                "location": "Los Altos Hills, CA"
+            },
+            {
+                "title": "eb12.jpg",
+                "month": "12",
+                "projectTitle": "Montana Cookhouse",
+                "arq": "Fernau & Hartman Architects",
+                "photoCreds": "Richard Barnes Photography",
+                "location": "Clyde Park, MT"
+            }
+        ]
+    }
+];
+ var d = new Date();
+      var n = d.getMonth();
+      n=7;
+
+console.log(decks[0].pictures[n].index);
+ console.log(decks[1].pictures[n].index);
+ console.log(decks[2].pictures[n].title);
+//var jsonRead = JSON.parse(decks);
+
+//console.log(jsonRead);
+
+ 
+       
+
+     
+
+
+      var relevanceImgArray=
+                            [ "relevance1.jpg",
+                             "relevance2.jpg",
+                             "relevance3.jpg",
+                             "relevance4.jpg",
+                             "relevance5.jpg",
+                             "relevance6.jpg",
+                             "relevance7.jpg",
+                             "relevance8.jpg",
+                             "relevance9.jpg",
+                             "relevance10.jpg",
+                             "relevance11.jpg",
+                            "relevance12.jpg",
+                            "relevance13.jpg",
+
+
+                            ];
+
+     var eastBayImgArray=
+                            [ "eb1.jpg",
+                             "eb2.jpg",
+                             "eb3.jpg",
+                             "eb4.jpg",
+                             "eb5.jpg",
+                             "eb6.jpg",
+                             "eb7.jpg",
+                             "eb8.jpg",
+                             "eb9.jpg",
+                             "eb10.jpg",
+                             "eb11.jpg",
+                            "eb12.jpg",
+                            "eb13.jpg",
+
+
+                            ];                       
+
+      //build the array with images in relance image folder
+
+  document.getElementById("aia-eb-img").src = "img/eb_images/"+decks[2].pictures[n].title;
+  document.getElementById("nationalHomepPic").src = "img/relevance_images/"+decks[0].pictures[n].index;
+         document.getElementById("stateHomePic").src = "img/national_images/"+decks[1].pictures[n].index;
+      
+
+      //relevanceImgArray.push();
+
+
+		 
+ 
+ 
+ 
+      
+    
+
+     $('#link-archnews').click(function(){
+
+         
+
+     });
+
+		});
+
+        </script>
+</body>
 </html>
