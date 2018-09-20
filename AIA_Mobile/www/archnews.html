@@ -14,8 +14,6 @@
 
 		<link rel="stylesheet" href="css/idangerous.swiper.css">
 		<link rel="stylesheet" href="css/bootstrap.css">
-
-		 
 		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.css" />
 		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.widescreen.css" media="all and (min-width: 900px)" />
 		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.themes.css" media="all and (min-width: 900px)" />
@@ -25,174 +23,116 @@
     <link media="screen and (device-aspect-ratio: 2/3)" type="text/css" rel="stylesheet" href="css/iphone3-4.css"/>
     <link media="screen and (device-aspect-ratio: 9/16)" type="text/css" rel="stylesheet" href="css/galaxyS4.css"/>
 
-		<style type="text/css">
-			@media all and (min-width: 900px) {
-				html, body {
-					height: 100%;
-				}
-				#menu {
-					background: #eee;
-				}
-				#page {
+<style type="text/css">
+@media all and (min-width: 900px) {
+		html, body {
+			height: 100%;
+		}
+		#menu {
+			background: #eee;
+		}
+		#page {
 
-					border-left: 1px solid #ccc;
-					min-height: 100%;
-				}
-				/* hide open-button */
-				a[href="#menu"]
-				{
-					display: none !important;
-				}
-			}
+			border-left: 1px solid #ccc;
+			min-height: 100%;
+		}
+		/* hide open-button */
+		a[href="#menu"]
+		{
+			display: none !important;
+		}
+	}
 
-			 
-			.article1-link{
-
-
-				text-decoration: none;
-			}
-		 
-			
-
-			ul {
-    		list-style: none;
-    		padding: 0;
-    		margin: 0;
-   			 display: table;
-   			 width: 98%;
-   			 border-spacing:5px;
-   			 margin-top:60px;
-			}
-			li {
-				 position: relative;
-				  
+	.article1-link{
+		text-decoration: none;
+	}
 
 
-        	 
-       		 display: table-row;
+	ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	 display: table;
+	 width: 98%;
+	 border-spacing:5px;
+	 margin-top:60px;
+	}
+	li {
+	position: relative;
+	display: table-row;
+
+	}
+
+.listItem div {
+  display: table-cell;
 
 
-       		 
-    		}
+}
 
-    		.listItem div {
-      		  display: table-cell;
-      		  
+.description-wrapper {
 
+	overflow:hidden;
+	position:absolute;
+	margin-top:35px;
+	line-height: 17px;
+	height: 2.6em;
+}
 
-      		   
+.description-wrapper > p{
 
-    		}
+	 position: relative;
+	margin-top:0px;
+	margin-left:2px;
+	 margin-right: 8px;
+	 font-family: 'Muli';
 
+	 font-size:12px;
 
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+ overflow: hidden;
+ max-height: 2.75em;
+ line-height: 1.3em;
 
+	color:#37332B;
 
-			 
+}
+.description-wrapper > p > a{
 
-		 
-			 
-			
-			.description-wrapper {
+	text-decoration: none;
+	color:blue;
+}
+.byline{
 
-				 
-				 
-				overflow:hidden;
-				position:absolute;
-				margin-top:35px;
-				line-height: 17px;
+	max-height: 1.6em;
+	margin-top:00px;
+	font-size:10px;
+	overflow:hidden;
+	margin-right:8px;
+	margin-left:2px;
+	margin-bottom:10px;
 
-				
-				height: 2.6em;
-
-
-
-			}
-
-			.description-wrapper > p{
-
-				/*
-
-				 position: relative;
-				 overflow:hidden;
-				 margin-left:10px;
-				 margin-right: 10px;
-
-				 
-				margin-top:3px;
-				*/
-
-
-				 position: relative;
-				margin-top:0px;
-				margin-left:2px;
-				 margin-right: 8px;
-				 font-family: 'Muli';
-				  
-				 font-size:12px;
-
-				text-overflow: ellipsis;
-  				word-wrap: break-word;
- 			 overflow: hidden;
- 			 max-height: 2.75em;
- 			 line-height: 1.3em;
-
-				color:#37332B;
-				
+	color:#7D7366;
+}
+.mainByline{
 
 
+	position:absolute;
+	max-height: 1.6em;
+	margin-top:5px;
+	font-size:10px;
+	overflow:hidden;
+	margin-right:8px;
+	margin-left:2px;
 
+	color:#7D7366;
+}
+.subtitle{
 
-			}
-			.description-wrapper > p > a{
-
-				text-decoration: none;
-				color:blue;
-
-
-
-
-			}
-			.byline{
-
-				
-				 
-				max-height: 1.6em;
-				margin-top:00px;
-				font-size:10px;
-				overflow:hidden;
-				margin-right:8px;
-				margin-left:2px;
-				margin-bottom:10px;
-
-				color:#7D7366;
-			}
-			.mainByline{
-
-				
-				position:absolute;
-				max-height: 1.6em;
-				margin-top:5px;
-				font-size:10px;
-				overflow:hidden;
-				margin-right:8px;
-				margin-left:2px;
-
-				color:#7D7366;
-			}
-			.subtitle{
-
-
-
-				color:black;
-				font-size:20px;
-				font-family:'Lato';
-			}
-
-
-
-
-
-
+	color:black;
+	font-size:20px;
+	font-family:'Lato';
+}
 
 .carousel {
   height: auto;
@@ -210,7 +150,6 @@
 .carousel .item {
   height: 100%;
   
-   
   
 }
 .carousel-inner > .item > img {
@@ -220,7 +159,7 @@
    background-repeat: no-repeat;
   top: 0;
   left: 0;
-   width:auto; /*ADJUST???????????????????*/
+   width:auto; 
     
     
   height: 100%;
@@ -257,41 +196,39 @@ visibility: hidden;
 
 }
 .dividing-line{
-
-	 
+ 
 	margin-top:10px;
 }
 @media(screen and (device-aspect-ratio: 2/3){
 
 	#latest-arch-news {
-position: absolute;
-margin-top: 30px;
-margin-left: -15px;
-margin-right: -25px;
-width: 320px;
+	position: absolute;
+	margin-top: 30px;
+	margin-left: -15px;
+	margin-right: -25px;
+	width: 320px;
+	}
 }
-}
 
 
+</style>
 
-		</style>
-
-		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 		 
-		<script type="text/javascript" src="js/jquery.mmenu.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				$('nav#menu').mmenu({
-					classes: 'mm-light'
-				});
-			});
-		</script>
+<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('nav#menu').mmenu({
+			classes: 'mm-light'
+		});
+	});
+</script>
 
-	</head>
-	<body>
-		<div data-role="page">
+</head>
+<body>
+	<div data-role="page">
 		<div id="static">
-		  <div id="header">
+	  		<div id="header">
 		   
 				<a  style="color:# 7D7366; text-decoration:none;" href="#menu"><img id="list-btn-img" src="img/nav-bar-list.png"/></a>
 			 	
@@ -302,17 +239,12 @@ width: 320px;
 			
 			</div>
  		</div>
-			<div id="content">
+		<div id="content">
 
-			
-			  
-		 
-			<!-- <div id="latest-news"></div> -->
-
-	<div id="main-article">
+			<div id="main-article">
 
 			  
-       <a class="article1-link" style="text-decoration:none" href="archNews-dynamicSwiper.html?index=0">
+       				<a class="article1-link" style="text-decoration:none" href="archNews-dynamicSwiper.html?index=0">
               <div class="title-wrapper-archnews">  
                   <span class="article-Title" id="main-title" style="font-size:14px; color:#EF4135"></span><br>
                   <span class="subtitle" id="subtitle" > Loading...</span>
@@ -360,25 +292,9 @@ width: 320px;
 				</ul>
 			</nav>
 
-
-
-
-
-
 		</div><!--data role page-->
 
 		 
-
-
-
-
-
-
-
-
-
-
-
 	</body>
 
 
