@@ -41,15 +41,7 @@
 				{
 					display: none !important;
 				}
-			}
-
-
-			 
-			  
-			
-			 
-			 
-			 
+			} 
 
 		</style>
 
@@ -73,8 +65,7 @@
 		   
 				<a  style="color:# 7D7366; text-decoration:none;" href="#menu"><img id="list-btn-img" src="img/nav-bar-list.png"/></a>
 			 	
-			 
-					<a href="index.html" class="home-btn"><img id="home-btn-img" src="img/nav-bar-home.png"/></a>
+				<a href="index.html" class="home-btn"><img id="home-btn-img" src="img/nav-bar-home.png"/></a>
 			 	
 				<span id="header-calendar-title" class="header-title">Calendar</span>
 			
@@ -84,27 +75,13 @@
 
 
 
-
-
-
- 
-			  
-		  
-
 			<div id="calendar-frame" style=" background-color:white">
 
 			<iframe id="googlecaledar" src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=aiasidney%40gmail.com&amp;color=%23B1440E&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="100%" height="700px" frameborder="0" scrolling="no"></iframe>
-
-
-
-			  
+		  
             </div>
 
-			 
 			</div><!--content-->
-
-
-
 
 			<nav id="menu">
 				<ul style="font-family:'Muli'; margin-top:70px">
@@ -121,13 +98,7 @@
 				</ul>
 			</nav>
 
-
-
-
-
 		</div><!--data role page-->
-
-		 
 
 	</body>
 
@@ -140,9 +111,7 @@
    displayNetworkError();
    console.log('we are NOT online...');
  }
-
        function displayNetworkError(){
-
 
   document.getElementById("content").innerHTML="<p style='margin-top:20%'>You are not connected to the internet. Please Check your connection and try again...</p><br><br><input type='button' value='try again' onclick='window.location.reload();'></input>";
  }
@@ -150,7 +119,6 @@
 
         var calendarWidth=$(window).width();
     	 
-
     	$('#googlecaledar').width()=calendarWidth;
 
     
@@ -164,13 +132,8 @@
       var ref = window.open(aLink, '_blank', 'location=yes');
       console.log("accessing : " + aLink);
 
-
     });
 
 	</script>
-
-	 
-
-
 
 </html>
